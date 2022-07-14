@@ -1,0 +1,91 @@
+/* 여백 초기화 */
+body, div, ul, li, ol, dl, dd, dt, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, tr, td, textarea, button, form {margin: 0; padding: 0;}
+
+/* 링크 초기화 */
+a {color: #222; text-decoration: none;}
+a:hover {color: #390;}
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, table {
+    font-family:'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; 
+    color: #222; font-size: 13px; line-height: 1.5;
+}
+
+/* 제목태그 초기화 */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 13px;
+    color: #222;
+    font-weight: normal;
+}
+
+/* 블릿기호초기화 */
+ul,ol,dl,li,menu {list-style: none;}
+
+/* IR 효과 */
+.ir_pm {display: block; overflow: hidden; font-size: 0; line-height: 0; text-indent: -9999px;}
+/* 의미있는 이미지의 대체 텍스트를 제공하는 경우 */
+
+.ir_wa {display: block; overflow: hidden; position: relative; z-index: -1; width: 100%; height: 100%;}
+/* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할때*/
+
+.ir_so {overflow: hidden; position: relative; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
+/*대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때*/
+
+/*이미지 초기화*/
+img {vertical-align: top; /*이미지 여백 초기화 block 써도 상관없음*/}
+
+/* 폰트 스타일 초기화 */
+em, address {font-style: normal;}
+
+/* layout */
+#wrap {  }
+#header { height: 200px; background: #111;}
+#banner { height: 200px;background: #333;}
+#contents {background: #555; }
+#cont1{height: 300px; background: #444;}
+#cont2{height: 300px; background: #555;}
+#cont3{height: 300px; background: #666;}
+#cont4{height: 300px; background: #777;}
+#cont5{height: 300px; background: #ccc;}
+#footer {}
+
+/* container */
+.container { width: 1400px; height: inherit; margin: 0 auto;  background:rgba(255,255,255,0.3); }
+
+/* 공통사항 */
+/* .cont5 {overflow: hidden; position: relative;}
+.cont5 ul { border: 1px solid gray; }
+.cont5 ul li{overflow: hidden; white-space: nowrap; text-overflow: ellipsis font-size: 16px; margin : 10px 0 10px 0;}
+.cont5 a {width: 60%; }
+.cont5 span{ width: 30%; float: right;}
+
+
+/*공지정보 왼쪽*/
+/* .cont5 .left {position: relative; float: left; width: 50%; background: orange; }
+.cont5 .left h4{font-size: 30px; } */
+
+/* 공지뉴스 오른쪽 */
+/* .cont5 .right {position: relative; float: left; width: 50%; background: green;  }
+.cont5 .right h4{font-size: 30px; }
+
+.cont5 .right .next{position: absolute; top:20px; right: 5px;}
+.cont5 .left .next{position: absolute; top:20px; right: 10px;} */ 
+
+/* 왼쪽 */
+.cont5 {overflow: hidden; padding:60px 60px;}
+.left {position: relative; float: left; width: 50%; }
+.left h4 {font-weight: bold; font-size: 30px; padding-bottom: 20px; }
+.left ul { border: 1px solid gray; margin-right: 20px;} 
+.left li{border-bottom: 1px solid gray; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding: 15px 0 15px 10px;}
+.left li a{width: 60%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.left li span{margin-right: 10px; text-align: right ; float: right; width: 30%;}
+.left .next {position: absolute; top: 20px; right: 25px;  }
+
+/* 오른쪽 */
+.right {position: relative;  float: left; width: 50%;}
+.right h4{font-weight: bold; font-size: 30px;  padding-bottom: 20px; }
+.right ul{ border: 1px solid gray; margin-right: 20px; }
+.right li{border-bottom: 1px solid gray; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;  padding: 15px 0 15px 10px; }
+.right li a{width:60%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.right li span{margin-right: 10px;  text-align: right ; float: right; width: 30%; }
+.right .next {position: absolute; top: 20px; right: 25px; }

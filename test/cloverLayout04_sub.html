@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /*FONT*/
+    .nanumsquare {font-family: 'NanumSquare', sans-serif !important;}
+    /* 여백 초기화 */
+    figure, figcaption, body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form {margin: 0; padding: 0;}
+    /*이미지초기화*/
+    img {width: 100%; vertical-align: top;}
+    /* 폰트 스타일초기화*/
+    em{font-style: normal;}
+    /* a 링크 초기화 */
+    a {color: #222; text-decoration: none;}
+    a:hover {color:#3192bf;}
+
+    /* 폰트 초기화 */
+    body, input, textarea, select, button, table {
+        font-family: 'NanumSquare';}
+
+    /* 폰트 스타일 초기화 */
+    em, address {font-style: normal;}
+
+    /* 블릿기호 초기화 */    
+    dl, ul, li, ol, menu {list-style: none;}
+
+    /* 제목 태그 초기화 */
+    h1, h2, h3, h4, h5, h6 {font-size: 13px; color:#222; font-weight: normal;}
+
+    /* 테두리 초기화 */
+    img, fieldset {border: 0 none;}
+
+    /* CONTAINER */
+    .container {height: inherit; width: 1400px; margin: 0 auto;  }
+    /* background: rgba(9,25,255,0.2);*/ 
+
+    /* LAYOUT */
+    #wrap{}
+    #header{height: 90px; width: 100%; background: #fff; position: fixed;  z-index:1000;}
+    .header{overflow: hidden; height: 90px;}
+    .header h1{ width: 30%; float: left; margin-left: 30px; }
+    .header h1 a{display: inline-block; width: 150px; height:30px; background-image: url(img/svg_icon.png); background-position:-4px -62px; margin-top:25px;}
+    .header ul.menu{float: left; width: 40%;}
+    .header ul.menu li{display: inline-block; font-size: 16px; font-weight: 700; line-height: 16px; color:#a8a8a8;}
+    .header ul.menu li a{display: block; height: 86px;   padding: 34px 30px;  color:#292929;  font-size: 16px;  font-weight: 700;  line-height: 16px; }
+    .header ul.btn {overflow: hidden; float: left;  width: 20%; }
+    .header ul.btn li {float: right; color: rgba(255,255,255,.8); width: 100px; margin-top: 20px;} 
+    .header ul.btn li a{margin-left: 8px; font-size: 12px; font-weight: 700;display: inline-block; width: 80px; height: 40px; padding:0px 0 0 0px; border: 1px solid rgba(0,0,0,.4); text-align: center; color: #939393; border-radius: 3px; line-height: 40px;}  
+    .header ul.btn li a:hover {background:white;}
+
+     #banner{
+         animation: slide 8s infinite; 
+         }
+         @keyframes slide{
+        0%{background: url(img/research_intro_career_1.png) no-repeat center; background-size: cover; animation: 1s ease infinite; }
+        50%{background: url(img/research_intro_career_2.png) no-repeat center; background-size: cover; animation: 1s ease infinite; }
+        100%{background: url(img/research_intro_career_3.png) no-repeat center; background-size: cover; animation: 1s ease infinite; }
+    }
+    .banner {margin: 0 auto; text-align: left; padding-top: 182px; padding-left: 60px;}
+    .banner h2{font-size: 40px; font-weight: 900; color: #fff; padding-bottom: 15px; }
+    .banner p{font-size: 18px;color: #fff; margin-top: 17px; font-weight: 300; line-height: 32px; padding-bottom: 200px;}
+    .banner ul{overflow: hidden;}
+    .banner li{float: left; margin-top: 50px; padding-bottom: 160px;}
+    .banner li:nth-child(2){margin-left: 30px;}
+    .banner li a{
+        display: inline-block; 
+        color:#fff; padding: 20px 40px; 
+        border:1px solid #fff; font-size: 18px; border-radius: 10px;
+    }
+    /* Cont1 */
+    .cont1{width: 100%;color: #fff; text-align: left; padding-top: 140px; position: relative;}
+    .cont1 .cont1_lang_btn a{display: inline-block; border: 1px solid #dbdbdb; border-radius: 2px; padding:5px;
+    width: 76px; height: 32px; margin: -1px; border: 1px solid transparent; border-radius: 2px;  font-size: 13px;  line-height: 34px; text-align: center; color: #888;
+    }
+    .cont1 .cont1_lang_btn .btn_english{position: absolute; top:30px; right: 300px;  background: #ededed;}
+    .cont1 .cont1_lang_btn .btn_korean{ position: absolute; top:30px; right: 212px;  background: #fff; color:#2ebc76; border: 1px solid #dbdbdb;}
+    /* Cont_btn 1*/
+    .cont1_btn_total { }
+    .cont1_btn_total .cont1_btn_1{ }
+    .cont1_btn_total .cot1_btn_1_title{font-size: 19px;position: relative;width: 100%;height: 94px;background: 0 0;border: 0;font-size: 20px;line-height: 27px;text-align: left; color: #000; border-bottom: 1px solid #e8e8e8;}
+    .cont1_btn_total .cot1_btn_1_title::before{
+        background: url(img/sp_icon.png);
+        background-position: -654px -256px;background-repeat: no-repeat;width: 20px;height: 12px;position: absolute;top: 50%;right: 20px;margin-top: -6px; content: '';
+    }
+    .cont1_btn_total .cont1_btn_1_detail{display: none; padding: 60px 50px 70px; border: 1px solid #e8e8e8; }
+    .cont1_btn_total .cont1_btn_1_detail h3{font-size: 17px;  padding-bottom: 14px;  font-size: 18px; line-height: 24px;  color: #2ebc76; padding-top: 10px;}
+    .cont1_btn_total .cont1_btn_1_detail ul{color: #999; }
+    .cont1_btn_total .cont1_btn_1_detail li{font-size: 15px;padding: 0 0 8px 15px;line-height: 23px;color: #333; }
+    .cont1_btn_total .cont1_btn_1_detail h4{font-size: 15px;padding-top: 19px;line-height: 23px;color: #000;}
+    /* Cont_btn 2*/
+    .cont2_btn_total { }
+    .cont2_btn_total .cont2_btn_2{ }
+    .cont2_btn_total .cot2_btn_2_title{font-size: 19px;position: relative;width: 100%;height: 94px;background: 0 0;border: 0;font-size: 20px;line-height: 27px;text-align: left; color: #000; border-bottom: 1px solid #e8e8e8;}
+    .cont2_btn_total .cot2_btn_2_title::before{
+        background: url(img/sp_icon.png);
+        background-position: -654px -256px;background-repeat: no-repeat;width: 20px;height: 12px;position: absolute;top: 50%;right: 20px;margin-top: -6px; content: '';
+    }
+    .cont2_btn_total .cont2_btn_2_detail{display: none; padding: 60px 50px 70px; border: 1px solid #e8e8e8; }
+    .cont2_btn_total .cont2_btn_2_detail h3{font-size: 17px;  padding-bottom: 14px;  font-size: 18px; line-height: 24px;  color: #2ebc76; padding-top: 10px;}
+    .cont2_btn_total .cont2_btn_2_detail ul{color: #999; }
+    .cont2_btn_total .cont2_btn_2_detail li{font-size: 15px;padding: 0 0 8px 15px;line-height: 23px;color: #333; }
+    .cont1_btn_total .cont2_btn_2_detail h4{font-size: 15px;padding-top: 19px;line-height: 23px;color: #000;}
+    /* Cont_btn 3*/
+    .cont3_btn_total { }
+    .cont3_btn_total .cont3_btn_3{ }
+    .cont3_btn_total .cot3_btn_3_title{font-size: 19px;position: relative;width: 100%;height: 94px;background: 0 0;border: 0;font-size: 20px;line-height: 27px;text-align: left; color: #000; border-bottom: 1px solid #e8e8e8;}
+    .cont3_btn_total .cot3_btn_3_title::before{
+        background: url(img/sp_icon.png);
+        background-position: -654px -256px;background-repeat: no-repeat;width: 20px;height: 12px;position: absolute;top: 50%;right: 20px;margin-top: -6px; content: '';
+    }
+    .cont3_btn_total .cont3_btn_3_detail{display: none; padding: 60px 50px 70px; border: 1px solid #e8e8e8; }
+    .cont3_btn_total .cont3_btn_3_detail h3{font-size: 17px;  padding-bottom: 14px;  font-size: 18px; line-height: 24px;  color: #2ebc76; padding-top: 10px;}
+    .cont3_btn_total .cont3_btn_3_detail ul{color: #999; }
+    .cont3_btn_total .cont3_btn_3_detail li{font-size: 15px;padding: 0 0 8px 15px;line-height: 23px;color: #333; }
+    .cont3_btn_total .cont3_btn_3_detail h4{font-size: 15px;padding-top: 19px;line-height: 23px;color: #000;}
+    /* Cont_btn 4*/
+    .cont4_btn_total { margin-bottom: 70px;}
+    .cont4_btn_total .cont4_btn_3{ }
+    .cont4_btn_total .cot4_btn_4_title{font-size: 19px;position: relative;width: 100%;height: 94px;background: 0 0;border: 0;font-size: 20px;line-height: 27px;text-align: left; color: #000; border-bottom: 1px solid #e8e8e8;}
+    .cont4_btn_total .cot4_btn_4_title::before{
+        background: url(img/sp_icon.png);
+        background-position: -654px -256px;background-repeat: no-repeat;width: 20px;height: 12px;position: absolute;top: 50%;right: 20px;margin-top: -6px; content: '';
+    }
+    .cont4_btn_total .cont4_btn_4_detail{display: none; padding: 60px 50px 70px; border: 1px solid #e8e8e8; }
+    .cont4_btn_total .cont4_btn_4_detail h3{font-size: 17px;  padding-bottom: 14px;  font-size: 18px; line-height: 24px;  color: #2ebc76; padding-top: 10px;}
+    .cont4_btn_total .cont4_btn_4_detail ul{color: #999; }
+    .cont4_btn_total .cont4_btn_4_detail li{font-size: 15px;padding: 0 0 8px 15px;line-height: 23px;color: #333; }
+    .cont4_btn_total .cont4_btn_4_detail h4{font-size: 15px;padding-top: 19px;line-height: 23px;color: #000;}
+
+    /*footer*/
+        #footer{background: #000; padding-top: 20px;}
+        .footer {position: relative; padding-top: 10px; }
+        .footer_logo {width: 145px; height: 20px; background: url(img/sp_svg_icon.png) no-repeat -4px -34px;}
+        .footer .logo_r {position: absolute; right: 0px; top: -20px;}
+        .footer .logo_r li:nth-child(1) {width: 21px; height: 18px; background: url(img/1120_logo.png) no-repeat -128px -92px; margin-right: 20px;}
+        .footer .logo_r li:nth-child(2) {width: 18px; height: 18px; background: url(img/1120_logo.png) no-repeat -164px -218px; margin-right: -60px;}
+        .footer .logo_r li:nth-child(3) {width: 18px; height: 18px; background: url(img/1120_logo.png) no-repeat -138px -218px; margin-right: 20px;}
+        .footer .logo_r li:nth-child(4) {width: 20px; height: 14px; background: url(img/1120_logo.png) no-repeat -200px -172px; margin-right: 20px;}
+        .footer ul {padding-top: 30px;}
+        .footer ul li {display: inline-block; color: gray; font-size: 12px;}
+        .footer ul li:nth-child(1) {margin: 0}
+        .footer ul li:nth-child(3) {margin: 0 80px}
+        .footer ul li:nth-child(4) {margin-right: 5px;}
+        .footer ul li:nth-child(5) {margin-right: 5px;}
+        .footer ul li:nth-child(6) {margin-right: 5px;}
+        .footer ul li:nth-child(7) {margin-right: 5px;}
+</style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="header">
+                    <h1 class="logo"><a href="#"></a></h1>
+                    <ul class="menu">
+                        <li><a href="./cloverLayout01_sub.html">기술·솔루션</a></li>
+                        <li><a href="./cloverLayout02_sub.html">제품</a></li>
+                        <li><a href="./cloverLayout03_sub.html">플랫폼</a></li>
+                        <li><a href="./cloverLayout04_sub.html">파트너</a></li>
+                        <li><a href="./cloverLayout04_sub.html">리서치</a></li>
+                    </ul>
+                    <ul class="btn">
+                        <li><a href="#">Biz Star</a></li>
+                        <li><a href="#">비즈니스문의</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!--배너-->
+        <section id="banner">
+            <div class="container">
+                <div class="banner">
+                    <h2>Careers</h2>
+                    <p>클로바를 글로벌 수준의 AI 플랫폼으로 만들기 위해<br>
+                        우수한 역량을 보유한 AI 연구자 및 엔지니어분들을 찾고 있습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--배너-->
+    <section id="cont1">
+    <div class="container">
+        <div class="cont1">
+                <div class="cont1_lang_btn">
+                    <a href="#" class="btn_english">English</a>
+                    <a href="#" class="btn_korean">Korean</a>
+                </div>
+                <!--btn시작-->
+                <div class="cont1_btn_total">
+                    <div class="cont1_btn_1">
+                        <button type="button" class="contbtn cot1_btn_1_title">상시채용</button>
+                        <div class="cont1_btn_1_detail active">
+                            <h3>소개</h3>
+                            <ul>
+                                <li>CLOVA AI Research는 클로바에 필요한 선행 AI기술 연구개발 위한 글로벌 팀입니다. 클로바를 글로벌 수준의 AI 플랫폼으로 만들기 위해 우수한 역량을 보유한 AI 연구자 및 엔지니어분들을 찾고 있습니다.</li>
+                                <li>CLOVA AI Research는 클로바 내부 뿐 아니라 네이버 내의 타 조직들과 매우 강력하고 열린 협업체계를 구축하고 있습니다.</li>
+                                <li>글로벌 팀이므로 공용언어는 영어를 사용합니다.</li>
+                            </ul>
+                            <h3>지원자격</h3>
+                            <ul>
+                                <li>CLOVA의 성능향상을 위한 AI 선행 기술 연구가 가능한 인력<br>(자연어처리, 컴퓨터비전, 추천 등을 포함한 기계학습기반 AI기술 전 분야)</li>
+                            </ul>
+                            <h4>선행기술 연구 전문가 (Research Scientist)</h4>
+                            <ul>
+                                <li>- 최신 AI 연구 기술에 대한 이해 , 우수한 연구 역량 및 실적</li>
+                                <li>- 프로젝트를 리딩하고 연구방향을 제시할 수 있는 강력한 연구개발 리더십</li>
+                            </ul>
+                            <h4>AI SW 엔지니어</h4>
+                            <ul>
+                                <li>- Tensorflow, PyTorch, MXNet, Caffe2 등 오픈소스 프레임워크 기반 개발역량</li>
+                                <li>- 멀티 GPU 및 고성능 컴퓨팅관련 업무 경험</li>
+                                <li>- 머신러닝/딥러닝 모델 설계 및 구축 경험</li>
+                                <li>- 최신 AI 논문에 대한 빠르고 정확한 구현 능력</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--btn list1-->
+                    <!--btn시작-->
+                    <div class="cont2_btn_total">
+                        <div class="cont2_btn_2">
+                            <button type="button" class="contbtn cot2_btn_2_title">인턴십</button>
+                            <div class="cont2_btn_2_detail active">
+                                <h3>소개</h3>
+                                <ul>
+                                    <li>CLOVA AI Research는 클로바에 필요한 선행 AI기술 연구개발 위한 글로벌 팀입니다. 클로바를 글로벌 수준의 AI 플랫폼으로 만들기 위해 우수한 역량을 보유한 AI 연구자 및 엔지니어분들을 찾고 있습니다.</li>
+                                    <li>CLOVA AI Research는 클로바 내부 뿐 아니라 네이버 내의 타 조직들과 매우 강력하고 열린 협업체계를 구축하고 있습니다.</li>
+                                    <li>글로벌 팀이므로 공용언어는 영어를 사용합니다.</li>
+                                </ul>
+                                <h3>지원자격</h3>
+                                <ul>
+                                    <li>CLOVA의 성능향상을 위한 AI 선행 기술 연구가 가능한 인력<br>(자연어처리, 컴퓨터비전, 추천 등을 포함한 기계학습기반 AI기술 전 분야)</li>
+                                </ul>
+                                <h4>선행기술 연구 전문가 (Research Scientist)</h4>
+                                <ul>
+                                    <li>- 최신 AI 연구 기술에 대한 이해 , 우수한 연구 역량 및 실적</li>
+                                    <li>- 프로젝트를 리딩하고 연구방향을 제시할 수 있는 강력한 연구개발 리더십</li>
+                                </ul>
+                                <h4>AI SW 엔지니어</h4>
+                                <ul>
+                                    <li>- Tensorflow, PyTorch, MXNet, Caffe2 등 오픈소스 프레임워크 기반 개발역량</li>
+                                    <li>- 멀티 GPU 및 고성능 컴퓨팅관련 업무 경험</li>
+                                    <li>- 머신러닝/딥러닝 모델 설계 및 구축 경험</li>
+                                    <li>- 최신 AI 논문에 대한 빠르고 정확한 구현 능력</li>
+                                </ul>
+                            </div>
+                        </div>
+                    <!--btn list2-->
+                <!--btn시작-->
+                <div class="cont3_btn_total">
+                    <div class="cont3_btn_3">
+                        <button type="button" class="contbtn cot3_btn_3_title">박사 후 연구원</button>
+                        <div class="cont3_btn_3_detail">
+                            <h3>소개</h3>
+                            <ul>
+                                <li>CLOVA AI Research는 클로바에 필요한 선행 AI기술 연구개발 위한 글로벌 팀입니다. 클로바를 글로벌 수준의 AI 플랫폼으로 만들기 위해 우수한 역량을 보유한 AI 연구자 및 엔지니어분들을 찾고 있습니다.</li>
+                                <li>CLOVA AI Research는 클로바 내부 뿐 아니라 네이버 내의 타 조직들과 매우 강력하고 열린 협업체계를 구축하고 있습니다.</li>
+                                <li>글로벌 팀이므로 공용언어는 영어를 사용합니다.</li>
+                            </ul>
+                            <h3>지원자격</h3>
+                            <ul>
+                                <li>CLOVA의 성능향상을 위한 AI 선행 기술 연구가 가능한 인력<br>(자연어처리, 컴퓨터비전, 추천 등을 포함한 기계학습기반 AI기술 전 분야)</li>
+                            </ul>
+                            <h4>선행기술 연구 전문가 (Research Scientist)</h4>
+                            <ul>
+                                <li>- 최신 AI 연구 기술에 대한 이해 , 우수한 연구 역량 및 실적</li>
+                                <li>- 프로젝트를 리딩하고 연구방향을 제시할 수 있는 강력한 연구개발 리더십</li>
+                            </ul>
+                            <h4>AI SW 엔지니어</h4>
+                            <ul>
+                                <li>- Tensorflow, PyTorch, MXNet, Caffe2 등 오픈소스 프레임워크 기반 개발역량</li>
+                                <li>- 멀티 GPU 및 고성능 컴퓨팅관련 업무 경험</li>
+                                <li>- 머신러닝/딥러닝 모델 설계 및 구축 경험</li>
+                                <li>- 최신 AI 논문에 대한 빠르고 정확한 구현 능력</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--btn list3-->
+                    <!--btn시작-->
+                    <div class="cont4_btn_total">
+                        <div class="cont4_btn_4">
+                            <button type="button" class="contbtn cot4_btn_4_title">글로벌 레지던시</button>
+                            <div class="cont4_btn_4_detail">
+                                <h3>소개</h3>
+                                <ul>
+                                    <li>CLOVA AI Research는 클로바에 필요한 선행 AI기술 연구개발 위한 글로벌 팀입니다. 클로바를 글로벌 수준의 AI 플랫폼으로 만들기 위해 우수한 역량을 보유한 AI 연구자 및 엔지니어분들을 찾고 있습니다.</li>
+                                    <li>CLOVA AI Research는 클로바 내부 뿐 아니라 네이버 내의 타 조직들과 매우 강력하고 열린 협업체계를 구축하고 있습니다.</li>
+                                    <li>글로벌 팀이므로 공용언어는 영어를 사용합니다.</li>
+                                </ul>
+                                <h3>지원자격</h3>
+                                <ul>
+                                    <li>CLOVA의 성능향상을 위한 AI 선행 기술 연구가 가능한 인력<br>(자연어처리, 컴퓨터비전, 추천 등을 포함한 기계학습기반 AI기술 전 분야)</li>
+                                </ul>
+                                <h4>선행기술 연구 전문가 (Research Scientist)</h4>
+                                <ul>
+                                    <li>- 최신 AI 연구 기술에 대한 이해 , 우수한 연구 역량 및 실적</li>
+                                    <li>- 프로젝트를 리딩하고 연구방향을 제시할 수 있는 강력한 연구개발 리더십</li>
+                                </ul>
+                                <h4>AI SW 엔지니어</h4>
+                                <ul>
+                                    <li>- Tensorflow, PyTorch, MXNet, Caffe2 등 오픈소스 프레임워크 기반 개발역량</li>
+                                    <li>- 멀티 GPU 및 고성능 컴퓨팅관련 업무 경험</li>
+                                    <li>- 머신러닝/딥러닝 모델 설계 및 구축 경험</li>
+                                    <li>- 최신 AI 논문에 대한 빠르고 정확한 구현 능력</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--btn list4-->
+                </div>
+            </div>
+        </section>
+        <!--footer-->
+        <footer id="footer">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer_logo"></div>
+                    <ul class="logo_r">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                    <ul>
+                        <li>고객센터 1833-5387</li>
+                        <li>09:00 - 18:00 (주말, 공휴일 휴무) </li>
+                        <li>Powered by NAVER · LINE</li>
+                        <li>공지사항</li>
+                        <li>이용약관</li>
+                        <li>CLOVA채용안내</li>
+                        <li>CLOVA JP</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+</body>
+<script src="../assets/js/jquery-1.9.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script>
+        //버튼을 클릭하면 전체 메뉴를 보이게 하세요.
+        $(".cot1_btn_1_title").click(function(e){
+             e.preventDefault();
+             $(".cont1_btn_1_detail").slideToggle(200);
+             $(this).toggleClass("on");
+         });
+
+         $(".cot2_btn_2_title").click(function(e){
+             e.preventDefault();
+             $(".cont2_btn_2_detail").slideToggle(200);
+             $(this).toggleClass("on");
+         });
+
+         $(".cot3_btn_3_title").click(function(e){
+             e.preventDefault();
+             $(".cont3_btn_3_detail").slideToggle(200);
+             $(this).toggleClass("on");
+         });
+         
+         $(".cot4_btn_4_title").click(function(e){
+             e.preventDefault();
+             $(".cont4_btn_4_detail").slideToggle(200);
+             $(this).toggleClass("on");
+         });
+</script>
+</html>

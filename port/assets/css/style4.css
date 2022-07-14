@@ -1,0 +1,564 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&display=swap");
+@font-face {
+  font-family: 'NEXON Lv2 Gothic Light';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NEXON Lv2 Gothic';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-size: 17px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html #header, body #header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  flex: 0 0 100px;
+  font-size: 1rem;
+  font-family: 'NEXON Lv2 Gothic';
+  color: #fff;
+}
+
+html #header .logo, body #header .logo {
+  text-align: center;
+  flex: 0 0 22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+html #header .logo h1, body #header .logo h1 {
+  font-size: 1rem;
+  font-family: 'NEXON Lv2 Gothic';
+  color: #fff;
+}
+
+html #header .menu, body #header .menu {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100px;
+  flex: 0 0 56%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+html #header .menu a, body #header .menu a {
+  margin-right: 25%;
+}
+
+html #header .about, body #header .about {
+  flex: 0 0 22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+html .bg, body .bg {
+  width: 100%;
+  height: 100%;
+}
+
+html .bg .tile__bg, body .bg .tile__bg {
+  position: relative;
+}
+
+html .bg .tile__bg--first, body .bg .tile__bg--first {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html .bg .tile__bg--last, body .bg .tile__bg--last {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html .tile, body .tile {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+html .tile .tile__img, body .tile .tile__img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+html .title, body .title {
+  position: absolute;
+  top: 50%;
+  left: 2.5rem;
+  color: #fff;
+  overflow: hidden;
+  height: 50%;
+}
+
+html .title .title__container, body .title .title__container {
+  margin-top: 10px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: 310px;
+}
+
+html .title .title__container .title__text, body .title .title__container .title__text {
+  width: 20%;
+  height: 90%;
+}
+
+html .title .title__container .title__text--first, body .title .title__container .title__text--first {
+  height: 25rem;
+}
+
+html .title .title__container .title__text--first h2, body .title .title__container .title__text--first h2 {
+  font-size: 3rem;
+  font-family: 'IM Fell Double Pica', serif;
+  color: #fff;
+  margin-top: 5%;
+}
+
+html .title .title__container .title__text--first p, body .title .title__container .title__text--first p {
+  font-size: 1rem;
+  font-family: 'NEXON Lv2 Gothic Light';
+  color: #fff;
+  line-height: 1.7rem;
+  width: 300px;
+  margin-bottom: 10%;
+  letter-spacing: -0.06rem;
+}
+
+html .title .title__container .title__text--first a, body .title .title__container .title__text--first a {
+  font-size: 1rem;
+  font-family: 'NEXON Lv2 Gothic Light';
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1rem 2rem 1rem 2rem;
+  display: inline-block;
+}
+
+html .title .title__container .title__text--last, body .title .title__container .title__text--last {
+  height: 20rem;
+}
+
+html .title .title__container .title__text--last h2, body .title .title__container .title__text--last h2 {
+  font-size: 3rem;
+  font-family: 'IM Fell Double Pica', serif;
+  color: #fff;
+  margin-top: 5%;
+}
+
+html .title .title__container .title__text--last p, body .title .title__container .title__text--last p {
+  font-size: 1rem;
+  font-family: 'NEXON Lv2 Gothic Light';
+  color: #fff;
+  line-height: 1.7rem;
+  width: 300px;
+  margin-bottom: 13%;
+}
+
+html .title .title__container .title__text--last a, body .title .title__container .title__text--last a {
+  font-size: 1rem;
+  font-family: 'NEXON Lv2 Gothic Light';
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+html .next-tile, body .next-tile {
+  position: absolute;
+  top: 100px;
+  bottom: 100px;
+  right: 0;
+  width: 22%;
+  height: calc(100vh - 198px);
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  background: #ccc;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  z-index: 100;
+  margin: 0;
+}
+
+html .next-tile .next-tile__details, body .next-tile .next-tile__details {
+  background: transparent;
+  margin-left: 10%;
+  width: 60%;
+  margin-top: 30%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+  position: relative;
+}
+
+html .next-tile .next-tile__details .next-tile__heading, body .next-tile .next-tile__details .next-tile__heading {
+  margin-top: 50%;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+}
+
+html .next-tile .next-tile__details .next-tile__title, body .next-tile .next-tile__details .next-tile__title {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-family: 'IM Fell Double Pica', serif;
+  color: #fff;
+  letter-spacing: -0.01rem;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+html .next-tile .next-tile__details .next-tile__title .next-tile__title__text, body .next-tile .next-tile__details .next-tile__title .next-tile__title__text {
+  font-size: 2.5rem;
+  font-family: 'IM Fell Double Pica', serif;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+html .next-tile .next-tile__details .next-tile__title .next-tile__title__text--last, body .next-tile .next-tile__details .next-tile__title .next-tile__title__text--last {
+  opacity: 0;
+}
+
+html .next-tile .next-tile__details .next-tile__arrow, body .next-tile .next-tile__details .next-tile__arrow {
+  fill: #fff;
+  width: 2rem;
+  display: block;
+}
+
+html .next-tile .next-tile__preview, body .next-tile .next-tile__preview {
+  width: 22vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  height: calc(100vh - 198px);
+}
+
+html .next-tile .next-tile__preview .next-tile__preview__img, body .next-tile .next-tile__preview .next-tile__preview__img {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+html .next-tile .next-tile__preview .next-tile__preview__img--last, body .next-tile .next-tile__preview .next-tile__preview__img--last {
+  opacity: 0;
+  transform: translateY(-50%) scale(1.6);
+  transform-origin: 50% 50%;
+}
+
+/* .lines */
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.lines__h, .lines__v {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lines__h:after, .lines__h:before {
+  content: "";
+}
+
+.lines__v:after, .lines__v:before {
+  content: "";
+}
+
+.lines__h span, .lines__h:after, .lines__h:before {
+  position: absolute;
+  background-color: #fcffe4;
+  opacity: .25;
+  backface-visibility: hidden;
+}
+
+.lines__v span, .lines__v:after, .lines__v:before {
+  position: absolute;
+  background-color: #fcffe4;
+  opacity: .25;
+  backface-visibility: hidden;
+}
+
+.lines__h:after {
+  width: 100%;
+  height: 1px;
+  left: 0;
+  transform: scaleX(0) translateZ(0);
+  transition: transform 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.lines__h:before {
+  width: 100%;
+  height: 1px;
+  left: 0;
+  transform: scaleX(0) translateZ(0);
+  transition: transform 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  top: 99px;
+  transform-origin: right center;
+}
+
+.lines__h:after {
+  bottom: 99px;
+  transform-origin: left center;
+}
+
+.lines__h.quarter:after, .lines__h.quarter:before {
+  transform: scaleX(0.25) translateZ(0);
+}
+
+.lines__h.semi:after, .lines__h.semi:before {
+  transform: scaleX(0.5) translateZ(0);
+}
+
+.lines__h.quarter3:after, .lines__h.quarter3:before {
+  transform: scaleX(0.75) translateZ(0);
+}
+
+.lines__h.shown:after, .lines__h.shown:before {
+  transform: scaleX(1) translateZ(0);
+}
+
+@media (max-width: 1024px) {
+  .lines__h:before {
+    top: 69px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .lines__h:before {
+    top: 49px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .lines__h:after {
+    bottom: 69px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .lines__h:after {
+    bottom: 49px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lines__v {
+    display: none;
+  }
+}
+
+.lines__v span, .lines__v:after {
+  width: 1px;
+  height: 100%;
+  bottom: 0;
+  transform: scaleY(0) translateZ(0);
+}
+
+.lines__v:before {
+  width: 1px;
+  height: 100%;
+  bottom: 0;
+  transform: scaleY(0) translateZ(0);
+  left: 22%;
+}
+
+.lines__v span, .lines__v:before {
+  transform-origin: center top;
+  transition: transform 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.lines__v span {
+  right: 33%;
+  transition-duration: 1.5s;
+}
+
+.lines__v:after {
+  right: 22%;
+  transform-origin: center bottom;
+  transition: transform 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.lines__v.quarter:after, .lines__v.quarter:before {
+  transform: scaleY(0.25) translateZ(0);
+}
+
+.lines__v.semi:after, .lines__v.semi:before {
+  transform: scaleY(0.5) translateZ(0);
+}
+
+.ines__v.quarter3:after {
+  transform: scaleY(0.75) translateZ(0);
+}
+
+.lines__v.quarter3:before {
+  transform: scaleY(0.75) translateZ(0);
+}
+
+.lines__v.shown:after, .lines__v.shown:before {
+  transform: scaleY(1) translateZ(0);
+}
+
+@media (max-width: 768px) {
+  .lines__crosses {
+    display: none;
+  }
+}
+
+.lines__crosses__x {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.lines__crosses__x:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  opacity: 0.6;
+}
+
+.lines__crosses__x:before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  opacity: 0.6;
+  width: 10px;
+  height: 1px;
+  top: 50%;
+  transform: translateY(-50%) scaleZ(2);
+}
+
+.lines__crosses__x:after {
+  width: 1px;
+  height: 10px;
+  left: 50%;
+  transform: translateX(-50%) scaleZ(2);
+}
+
+.lines__crosses__x:first-child, .lines__crosses__x:nth-child(2), .lines__crosses__x:nth-child(5) {
+  top: 100px;
+}
+
+.lines__crosses__x:first-child, .lines__crosses__x:nth-child(3) {
+  left: 22%;
+}
+
+.lines__crosses__x:nth-child(2), .lines__crosses__x:nth-child(4) {
+  right: 22%;
+}
+
+.lines__crosses__x:nth-child(3), .lines__crosses__x:nth-child(4), .lines__crosses__x:nth-child(6) {
+  bottom: 100px;
+}
+
+.lines__crosses__x:nth-child(5), .lines__crosses__x:nth-child(6) {
+  right: 33%;
+  opacity: 0;
+}
+
+.lines__crosses__x:first-child {
+  transform: translate(-50%, -50%);
+}
+
+.lines__crosses__x:nth-child(2), .lines__crosses__x:nth-child(5) {
+  transform: translate(50%, -50%);
+}
+
+.lines__crosses__x:nth-child(3) {
+  transform: translate(-50%, 50%);
+}
+
+.lines__crosses__x:nth-child(4), .lines__crosses__x:nth-child(6) {
+  transform: translate(50%, 50%);
+}
+
+@media (max-width: 1024px) {
+  .lines__crosses__x:first-child, .lines__crosses__x:nth-child(2), .lines__crosses__x:nth-child(5) {
+    top: 70px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .lines__crosses__x:first-child, .lines__crosses__x:nth-child(2), .lines__crosses__x:nth-child(5) {
+    top: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .lines__crosses__x:nth-child(3), .lines__crosses__x:nth-child(4), .lines__crosses__x:nth-child(6) {
+    bottom: 70px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .lines__crosses__x:nth-child(3), .lines__crosses__x:nth-child(4), .lines__crosses__x:nth-child(6) {
+    bottom: 50px;
+  }
+}
+/*# sourceMappingURL=style4.css.map */

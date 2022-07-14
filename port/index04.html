@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style3.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo"><h1>SUPPORT PORTFOLIO</h1></div>
+        <div class="menu">
+            <a href="#">Website</a>
+            <a href="#"><span>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="19.5px" height="19.438px" viewBox="0 0 19.5 19.438" enable-background="new 0 0 19.5 19.438" xml:space="preserve">
+                    <rect x="0.503" y="0.501" fill="#F1F2F2" width="5.634" height="5.634"/>
+                    <rect x="6.878" y="0.501" fill="#F1F2F2" width="5.634" height="5.634"/>
+                    <rect x="13.253" y="0.501" fill="#F1F2F2" width="5.634" height="5.634"/>
+                    <rect x="0.503" y="6.908" fill="#F1F2F2" width="5.634" height="5.634"/>
+                    <rect x="6.878" y="6.908" fill="#F1F2F2" width="5.634" height="5.634"/>
+                    <rect x="13.253" y="6.908" fill="#F1F2F2" width="5.634" height="5.634"/>
+                    <rect x="0.503" y="13.314" fill="#F1F2F2" width="5.634" height="5.634"/>
+                    <rect x="6.878" y="13.314" fill="#F1F2F2" width="5.634" height="5.634"/>
+                    <rect x="13.253" y="13.314" fill="#F1F2F2" width="5.634" height="5.634"/>
+                </svg>
+            </span></a> 
+            <a href="#">Effect</a>
+        </div>
+        <div class="about">
+            <a href="#">About</a>
+        </div>
+    </header>
+    <div class="bg">
+        <div class="tile__bg tile__bg--first" ></div>
+        <div class="tile__bg tile__bg--last" ></div>
+    </div>
+    <div class="tile">
+        <img alt="" class="tile__img tile__img--first" />
+        <img alt="" class="tile__img tile__img--last" />
+    </div>
+    <div class="title">
+        &nbsp;<br />&nbsp;
+        <div class="title__container">
+            <div class="title__text title__text--first"></div>
+            <div class="title__text title__text--last"></div>
+        </div>
+    </div>
+    <button class="next-tile">
+        <span class="next-tile__details">
+            <span class="next-tile__heading">Up next</span>
+            <span class="next-tile__title">
+                &nbsp; <br />&nbsp;
+                <span class="next-tile__title__text next-tile__title__text--first"></span>
+                <span class="next-tile__title__text next-tile__title__text--last"></span>
+            </span>
+            <svg class="next-tile__arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42.6 20.1" style="enable-background:new 0 0 42.6 20.1;" xml:space="preserve">
+                <path class="st0" d="M0,8.2h35.5l-5.6-5.6L32.5,0l10.1,10.1L32.5,20.1l-2.6-2.6l5.6-5.6H0V8.2z"/>
+            </svg>
+            <div class="test-arrow"></div>
+        </span>
+        <span class="next-tile__preview">
+            <img class="next-tile__preview__img next-tile__preview__img--first" alt="" />
+            <img class="next-tile__preview__img next-tile__preview__img--last" alt="" />
+        </span>
+    </button>
+    <div class="lines isLoadid">
+        <div class="lines__h shown"></div>
+        <div class="lines__v shown">
+            <span></span>
+        </div>
+        <div class="lines__crosses">
+            <div class="lines__crosses__x"></div> 
+            <div class="lines__crosses__x"></div> 
+            <div class="lines__crosses__x"></div> 
+            <div class="lines__crosses__x"></div> 
+            <div class="lines__crosses__x"></div> 
+            <div class="lines__crosses__x"></div>
+        </div>
+    </div>
+    <bottom id="bottom">
+        <div class="logo"><p>JIWONKIM</p></div>
+        <div class="count">
+            <a href="#">Website</a>
+            <a href="#"><span></span></a> 
+            <a href="#">Effect</a>
+        </div>
+        <div class="about">
+            <a href="#">About</a>
+        </div>
+    </bottom>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://flairgale.cafe24.com/para/js/imagesloaded.pkgd.min.js"></script>
+    <script>
+        const tiles = [
+            {   
+                // react
+                image: 'https://blog.kakaocdn.net/dn/tY4Qo/btqT3tVLDpw/F4hmq4kejfnxCYRodkNTyK/img.jpg',
+                thumb: 'https://blog.kakaocdn.net/dn/c0LCYZ/btqT6HTRO2Z/RuGqJYua5FtaKyaA6QKhWK/img.jpg',
+                title: `<h2>React_Site</h2><br /><p>리액트를 사용하면 웹 애플리케이션에서 사용하는 유저 인터페이스를 재사용 가능한 컴포넌트로 분리하여 작성함으로서, 
+                프로젝트의 유지보수성을 우수하게 해줍니다</p><a href="https://react100-class.web.app/#/">SiteView</a>`,
+                nextTitle: 'Apple_site',
+                background: '#CBBBA8'
+            },
+            {
+                //apple
+                image: 'https://blog.kakaocdn.net/dn/dqJN6H/btqT6He53r6/HSf7FAkXukgK2Oh88kmzU1/img.jpg',
+                thumb: 'https://blog.kakaocdn.net/dn/c0LCYZ/btqT6HTRO2Z/RuGqJYua5FtaKyaA6QKhWK/img.jpg',
+                title: `<h2>Apple_site</h2><br /><p>리액트를 사용하면 웹 애플리케이션에서 사용하는 유저 인터페이스를 재사용 가능한 컴포넌트로 분리하여 작성함으로서, 
+                프로젝트의 유지보수성을 우수하게 해줍니다</p><a href="http://jiwon506.dothome.co.kr/effect/parallaxapple(2).html">SiteView</a>`,
+                nextTitle: 'Apple_site',
+                background: '#A39B92'
+            },
+            {
+                //megabox
+                image: 'https://blog.kakaocdn.net/dn/bUD67Y/btqT0sXG7Mk/ps5IXkr68EBWwceNaaTMB0/img.jpg',
+                thumb: 'https://blog.kakaocdn.net/dn/c0LCYZ/btqT6HTRO2Z/RuGqJYua5FtaKyaA6QKhWK/img.jpg',
+                title: `<h2>Megabox</h2><br /><p>리액트를 사용하면 웹 애플리케이션에서 사용하는 유저 인터페이스를 재사용 가능한 컴포넌트로 분리하여 작성함으로서, 
+                프로젝트의 유지보수성을 우수하게 해줍니다</p><a href="http://jiwon506.dothome.co.kr/megabox/mega287_20.html">SiteView</a>`,
+                nextTitle: 'Clova_site',
+                background: '#A8B4CB'
+            },
+            {
+                // clova
+                image: 'https://blog.kakaocdn.net/dn/bUD67Y/btqT0sXG7Mk/ps5IXkr68EBWwceNaaTMB0/img.jpg',
+                thumb: 'https://blog.kakaocdn.net/dn/c0LCYZ/btqT6HTRO2Z/RuGqJYua5FtaKyaA6QKhWK/img.jpg',
+                title: `<h2>Clova_site</h2><br /><p>리액트를 사용하면 웹 애플리케이션에서 사용하는 유저 인터페이스를 재사용 가능한 컴포넌트로 분리하여 작성함으로서, 
+                프로젝트의 유지보수성을 우수하게 해줍니다</p><a href="http://jiwon506.dothome.co.kr/test/cloverlayout.html">SiteView</a>`,
+                nextTitle: 'Responsive',
+                background: '#C29D8F'
+            },
+            {
+                // responsive
+                image: 'https://blog.kakaocdn.net/dn/bKz6Tm/btqT92bJS1v/zsSKuSyvUpbcpEsPkEsu80/img.jpg',
+                thumb: 'https://blog.kakaocdn.net/dn/c0LCYZ/btqT6HTRO2Z/RuGqJYua5FtaKyaA6QKhWK/img.jpg',
+                title: `<h2>Responsive</h2><br /><p>리액트를 사용하면 웹 애플리케이션에서 사용하는 유저 인터페이스를 재사용 가능한 컴포넌트로 분리하여 작성함으로서, 
+                프로젝트의 유지보수성을 우수하게 해줍니다</p><a href="http://jiwon506.dothome.co.kr/responsive/index.html">SiteView</a>`,
+                nextTitle: 'Webstandard',
+                background: '#A8C3CB'
+            },
+            {
+                // webstandard
+                image: 'https://blog.kakaocdn.net/dn/bwOH24/btqT02YBJjN/OYtPhx0TcQVyM7HaFKKRzK/img.jpg',
+                thumb: 'https://blog.kakaocdn.net/dn/c0LCYZ/btqT6HTRO2Z/RuGqJYua5FtaKyaA6QKhWK/img.jpg',
+                title: `<h2>Webstandard</h2><br /><p>리액트를 사용하면 웹 애플리케이션에서 사용하는 유저 인터페이스를 재사용 가능한 컴포넌트로 분리하여 작성함으로서, 
+                프로젝트의 유지보수성을 우수하게 해줍니다</p><a href="http://jiwon506.dothome.co.kr/webstandard/index.html">SiteView</a>`,
+                nextTitle: 'Apple_site',
+                background: '#B9CBA8'
+            }
+        ];
+
+        let activeIndex = 0;
+        const nextButton = document.querySelector('.next-tile');
+        updateTileRatio();
+        populateInitialData();
+        nextButton.addEventListener('click', nextTile);
+
+        function populateInitialData() {
+            const tileImages = document.querySelectorAll('.tile__img');
+            tileImages[0].src = `${tiles[activeIndex].image}`;
+            tileImages[1].src = `${tiles[getNextIndex()].image}`;
+
+            const tileTitles = document.querySelectorAll('.title__text');
+            tileTitles[0].innerHTML = tiles[activeIndex].title;
+            tileTitles[1].innerHTML = tiles[getNextIndex()].title;
+
+            const nextButtonImages = document.querySelectorAll('.next-tile__preview__img');
+            nextButtonImages[0].src = `${tiles[getNextIndex()].thumb}`;
+            nextButtonImages[1].src = `${tiles[getNextIndex(1)].thumb}`;
+
+            const nextButtonTitles = document.querySelectorAll('.next-tile__title__text');
+            nextButtonTitles[0].innerHTML = tiles[getNextIndex()].nextTitle;
+            nextButtonTitles[1].innerHTML = tiles[getNextIndex(1)].nextTitle;
+
+            const nextBackground = document.querySelectorAll('.tile__bg');
+            nextBackground[0].style.background = tiles[getNextIndex()].background;
+            nextBackground[1].style.background = tiles[getNextIndex(1)].background;
+        }
+
+        function updateTileRatio() {
+            const browserWidth = document.body.clientWidth;
+            const browserHeight = document.body.clientHeight;
+            const browserRatio = browserWidth/browserHeight;
+            const imageWidth = 873; 
+            const imageHeight = 485;
+            const imageRatio = imageWidth/imageHeight;
+            const tileImages = document.querySelectorAll('.tile__img');
+
+            if (browserRatio < imageRatio) {
+                for(let i = 0; i < tileImages.length; i++) {
+                    tileImages[i].style.width = 'auto';
+                    tileImages[i].style.height = '100%';
+                }
+            } else {
+                for(let i = 0; i < tileImages.length; i++) {
+                    tileImages[i].style.width = '100%';
+                    tileImages[i].style.height = 'auto';
+                }
+            }
+        }
+
+        window.addEventListener('resize', screenResized);
+        function screenResized() {
+            updateTileRatio();
+        }
+
+        const titleAnimation = new TimelineMax({ paused: true })
+        .to('.title__container', 0.8, {ease: Power2.easeOut, yPercent: -50}, 'titleAnimation')
+        .to('.title__text--first', 0.5, {opacity: 0}, 'titleAnimation')
+        .eventCallback('onComplete', () => {
+            titleAnimation.progress(0).pause();
+            const titles = document.querySelectorAll('.title__text');
+            titles[0].innerHTML = tiles[activeIndex].title;
+            titles[1].innerHTML = tiles[getNextIndex()].title;
+        });
+
+
+        TweenMax.set('.next-tile__preview img', {top: '50%', right: '0', y: '-50%'});
+        TweenMax.set('.tile__img', {top: '50%', left: '50%', x: '-50%', y: '-50%'});
+        TweenMax.set('.tile__img--last', {scale: 1.2, opacity: 0.001}); // Setting opacity 0 here causes lag on initial play, this dissapears later on, will open a ticket and see if this is a known issue
+        TweenMax.set('.tile__img--first, .title__img--last', {yPercent: -50, xPercent: -50});
+        TweenMax.set('.title', {y: '-50%', width: '100%'});
+        TweenMax.set('.title__container', {width: '100%'});
+
+ 
+        const nextTextAnimation = new TimelineMax({ paused: true })
+        .to('.next-tile__title__text--first', 0.4, {opacity: 0}, 'textChange')
+        .to('.next-tile__title__text--last', 0.4, {opacity: 1}, 'textChange');
+
+        const nextTextBackground = new TimelineMax({ paused: true })
+        .to('.tile__bg--first', 0.4, {opacity: 0}, 'textChange')
+        .to('.tile__bg--last', 0.4, {opacity: 1}, 'textChange');
+
+        const titles = document.querySelectorAll('.next-tile__title__text');
+        const backgrounds = document.querySelectorAll('.tile__bg');
+        const tileImages = document.querySelectorAll('.tile__img');
+        const previewImages = document.querySelectorAll('.next-tile__preview__img');
+
+        const nextButtonAnimation = new TimelineMax({ paused: true })
+        .to('.next-tile__details', 0.6, {ease: Power1.easeOut, xPercent: 80})
+        .to('.tile__img--last', 0.6, {ease: Sine.easeOut, opacity: 1, scale: 1}, 0)
+        .to('.next-tile__preview__img--first', 0, {opacity: 0}, 'sliderClosed')
+        .to('.next-tile__preview__img--last', 0.6, {ease: Sine.easeOut, opacity: 1, scale: 1}, 'sliderClosed')
+        .to('.next-tile__details', 0.5, {ease: Sine.easeOut, xPercent: 0}, 'sliderClosed+=0.15')
+        .add(() => nextTextAnimation.play(), '-=0.5')
+        .add(() => nextTextBackground.play(), '-=0.5')
+        .eventCallback('onComplete', () => {
+            nextButtonAnimation.progress(0).pause();
+            nextTextAnimation.progress(0).pause();
+            nextTextBackground.progress(0).pause();
+            tileImages[0].src = `${tiles[activeIndex].image}`;
+            tileImages[1].src = `${tiles[getNextIndex()].image}`;
+            previewImages[0].src = `${tiles[getNextIndex()].thumb}`;
+            previewImages[1].src = `${tiles[getNextIndex(1)].thumb}`;
+            titles[0].innerHTML = tiles[getNextIndex()].nextTitle;
+            titles[1].innerHTML = tiles[getNextIndex(1)].nextTitle;
+            backgrounds[0].style.background = tiles[getNextIndex()].background;
+            backgrounds[1].style.background = tiles[getNextIndex(1)].background;
+        });
+
+
+        function getNextIndex(skipSteps = 0) {
+            let newIndex = activeIndex;
+            incrementIndex();
+
+            for (let i = 0; i < skipSteps; i++) {
+                incrementIndex();
+            }
+            function incrementIndex() {
+                if (newIndex >= tiles.length - 1) {
+                    newIndex = 0
+                } else {
+                    newIndex = newIndex + 1
+                }
+            }
+            return newIndex;
+        }
+
+
+        function nextTile() {
+            if (
+                !titleAnimation.isActive() &&
+                !nextButtonAnimation.isActive() &&
+                !nextTextAnimation.isActive() &&
+                !nextTextBackground.isActive()
+            ) {
+                activeIndex = getNextIndex();
+                titleAnimation.play();
+                nextButtonAnimation.play();
+            }
+        }
+
+        titleAnimation.progress(1).progress(0);
+        nextButtonAnimation.progress(1).progress(0);
+        nextTextAnimation.progress(1).progress(0);
+        nextTextBackground.progress(1).progress(0);
+    </script>
+</body>
+</html>

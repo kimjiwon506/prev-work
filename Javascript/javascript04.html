@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //내이름은 웹쓰이며, 직업은 웹 퍼블리셔입니다.
+        //내이름은 웹스토리보이 이며 직업은 프론트앤드 개발자입니다
+        //매개변수 + 함수로 출력
+        function func1(name,job){
+            document.write( "내이름은" + name + "이며 직업은" +job + "입니다" );
+            document.write( "내이름은" + name + "이며 직업은" +job + "입니다" );
+        }
+        func1("웹쓰","웹퍼블리셔");
+        func1("웹스토리보이","프론트앤드개발자");
+        document.write("<br><br>");
+
+        //변수를 선언
+        function func2(name,job){
+            document.write("내이름은" + name + "이며 직업은" +job + "입니다" );
+        }
+        const youName1 = "웹쓰";
+        const youJob1 = "웹퍼블리셔";
+        const youName2 = "웹스토리보이";
+        const youJob2 = "프론트앤드 개발자";
+
+        func2(youName1,youJob1);
+        func2(youName2,youJob2);
+        document.write("<br><br>");
+
+        //객체로 선언하여 출력
+    //     function func3(name,job){
+    //         document.write("내이름은" + name + "이며 직업은" +job + "입니다" );
+    //     }
+    //    const info =[
+    //        {
+    //            name : "웹쓰";
+    //            job : "퍼블리셔";
+
+    //        },{
+
+    //        }
+    //     ];
+    //     func3(info[0].name, info[0].job);
+
+        //객체 + 매서
+    //   let info2 = {
+    //       name1 : "웹쓰";,
+    //       job1 : "웹퍼블리셔";,
+    //       name2 : "웹쓰";,
+    //       job2 : "웹퍼블리셔";,
+    //     study1 : function(){
+    //         document.write("내이름은" +this.name1 + "이며 직업은" +this.job1 + "입니다" ); 
+    //     },
+    //     study2 : function(){
+    //         document.write("내이름은" +this.name2 + "이며 직업은" +this.job2 + "입니다" ); 
+    //     },
+    //   }
+    //   info2.study1();
+    //   info2.study2();
+
+    //생성자 함수 + 인스턴스
+    // function info3(name,job) {
+    //     this.name = name;
+    //     this.job = job;
+    //     this.study = function() {
+    //         document.write("내이름은" +this.name+ "이며 직업은" +this.job + "입니다" );
+    //     }
+    // }
+    // const str1 = new Info3("웹쓰111","웹퍼블리셔");
+    // const str2 = new Info3("웹스토리보이","프론트앤드개발자");
+
+    // str1.study();
+    // str2.study();
+
+    //프로토타입매서드
+    // function  Info4(name,job) {
+    //     this.name = name;
+    //     this.job = job;
+    // }
+    // info4.prototype.study = function(){
+    //     document.write("내이름은" +this.name+ "이며 직업은" +this.job + "입니다" );
+    // }
+    // const str3 = new Info3("웹쓰111","웹퍼블리셔");
+    // const str4 = new Info3("웹스토리보이","프론트앤드개발자");
+
+    // str3.study();
+    // str4.study();
+
+    //객체 리터럴
+    // function Info5(name,job){
+    //     this.name = name;
+    //     this.job = job;
+    // }
+    // Info5. prototype = {
+    // }
+
+    //클래스(es6) : 함수의 집합체
+    class Info6 {
+        constructor(name,job){
+            this.name = name;
+            this.job = job;
+        }
+        study(){
+            document.write("내이름은" +this.name+ "이며 직업은" +this.job + "입니다" );
+        }
+    }
+    //인스턴스 객체 생성
+    const str7 = new Info6("웹쓰","웹퍼블리셔");
+    str7.study();
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsivelayout04</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{ background: lightgray;}
+        .container{ width: 1600px; height: inherit; margin: 0 auto;}
+        header{width: 100%; height: 100px; background: #333;}
+        nav { width: 100%; height:400px; background: #666; }
+        section { width: 90%; padding: 5%; background: #777; overflow: hidden;}
+        section > article{ width: 16%; margin: 2%; height: 200px; background: #999; float: left; border-radius: 10px; }
+        footer { width: 100%; height: 100px; background: #999;}
+
+        @media (max-width:1600px){
+            .container{ width: 100%;}
+            section { width: 100%;  background: #777; }
+            section { width: 90%; }
+            section > article {width: 23%; margin: 1%;}
+            section > article:first-child { display: none;}
+            section > article:last-child { display: none;}
+        }
+         @media (max-width:1210px){
+            section { width: 100%;  background: #777; }
+            section { width: 100%;}
+            section > article {width: 23%; margin: 1%;}
+            section > article:first-child { display: none;}
+            section > article:last-child { display: none;}
+        }
+        @media (max-width:900px){
+            .container{ width: 100%;}
+            section { width: 100%;  background: #777; }
+            section { width: 90%; }
+            section > article {width: 23%; margin: 5%; height: 100px;}
+            section > article:first-child { display: none;}
+            section > article:last-child { display: block;}
+        }
+        @media (max-width:600px){
+            .container{ width: 100%;}
+            section { width: 100%;  background: #777; }
+            section { width: 90%; }
+            section > article {width:4%; margin: 4%; }
+            section > article:first-child {display: block;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <nav></nav>
+        <section>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+        </section>
+        <footer></footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면 구현 test03</title>
+    <style>
+        @font-face {
+            font-family: 'S-CoreDream-8Heavy';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        /*reset*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*layout*/
+        body {
+            background-color: #fff3e0;
+        }
+        #wrap {
+            width: 100%;
+            font-family: 'S-CoreDream-8Heavy';
+            font-size: 60px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        #side {
+            width: 400px;
+            height: 1608px;
+            background-color: #ffe0b2;
+            float: left;
+            line-height: 1608px;
+        }
+
+        #banner {
+            width: 800px;
+            height: 350px;
+            background-color: #ffcc80;
+            float: left;
+            line-height: 350px;
+        }
+
+        #contents {
+            width: 800px;
+            height: 855px;
+            background-color: #ffa726;
+            float: left;
+            line-height: 855px;
+        }
+
+        #footer {
+            width: 800px;
+            height: 400px;
+            background-color: #ff9800;
+            float: left;
+            line-height: 400px;
+        }
+
+        #cwrap {
+            width: 1200px;
+            height: inherit;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!--wrap-->
+    <div id="wrap">
+        <!--side & contents-->
+        <div id="cwrap">
+            <div id="side">side</div>
+            <div id="banner">header</div>
+            <div id="contents">contents</div>
+            <div id="footer">footer</div>
+        </div>
+        <!--//side & contents-->
+    </div>
+    <!--//wrap-->
+</body>
+
+</html>

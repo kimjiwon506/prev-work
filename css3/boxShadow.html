@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="webstoryboy">
+    <meta name="description" content="웹 퍼블리셔를 위한 정보 공유 사이트입니다.">
+    <meta name="keywords" content="웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, publisher, css3, html, markup, design">
+    <title>Jiwon Kim website | Illustrator</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/docs.min.css" rel="stylesheet">
+    <link href="../assets/css/prism.css" rel="stylesheet">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon_114.png">
+    <link rel="icon" href="../assets/ico/icon.png">
+    <link rel="icon" href="../assets/ico/favicon_57.png" sizes="16x16">
+    <link rel="icon" href="../assets/ico/favicon_72.png" sizes="32x32">
+    <link rel="icon" href="../assets/ico/favicon_114.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon_114.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon_114.png" sizes="128x128">
+    <!-- Facebook meta tags -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="김지원 홈페이지" />
+    <meta property="og:url" content="https://smartwebuiux.tistory.com/" />
+    <meta property="og:image" content="https://smartwebuiux.tistory.com/" />
+    <meta property="og:site_name" content="김지원 홈페이지" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+    <!-- twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@김지원" />
+    <meta name="twitter:title" content="김지원" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="https://smartwebuiux.tistory.com/" />
+    <!-- 웹 폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.../assets2/js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <a class="sr-only" href="#content">Skip to main content</a>
+    <header class="navbar navbar-inverse navbar-static-top bs-docs-nav" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="../index.html" class="navbar-brand">JIWONKIM &lt;/doc&gt;</a>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse pull-right" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="https://smartwebuiux.tistory.com/">Tistory</a></li>
+                    <li><a href="https://codepen.io/jiwoncodepen">Codepen</a></li>
+                    <li><a href="https://github.com/jiwon506/dothome1">Github</a></li>
+                    <li><a href="https://github.com/jiwon506/dothome1">Figma</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="bs-header bgs5" id="content">
+        <div class="container">
+            <h1>Boxshadow &lt;/css3&gt;</h1>
+            <p><a href="https://smartwebuiux.tistory.com/" target="_blank">smartwebuiux.tistory.com</a></p>
+        </div>
+    </div>
+    <div class="container bs-docs-container">
+        <div class="row">
+            <!-- col-md-12 -->
+            <div class="col-md-12" role="main">
+                <!--광고박스넣어야함-->
+                <!-- Intro -->
+                <div class="bs-docs-section">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered  table-hover">
+                            <p class="bs-callout bs-callout-info">
+                               Boxshadow : none | h-shadow | v-shadow | blur | spread | color | inset
+                            </p>
+                            <thead>
+                                <tr>
+                                    <th>종류</th>
+                                    <th>예시</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>none</td>
+                                    <td>그림자 효과를 적용하지 않습니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>h-shadow</td>
+                                    <td>그림자의 수평(x축)거리를 나타냅니다</td>
+                                </tr>
+                                <tr>
+                                    <td>v-shadow</td>
+                                    <td>그림자의 수평(y축)거리를 나타냅니다</td>
+                                </tr>
+                                <tr>
+                                    <td>blur</td>
+                                    <td>그림자의 흐림정도 나타냅니다</td>
+                                </tr>
+                                <tr>
+                                    <td>spred</td>
+                                    <td>그림자의 거리를 나타냅니다</td>
+                                </tr>
+                                <tr>
+                                    <td>inset</td>
+                                    <td>그림자의 내부의 적용할 수 있습니다</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--//intro-->
+            <style>
+                .sample .boxWrap.shadowWrap > div {width: 150px; height: 150px; margin: 35px; line-height: 150px;}
+                .shadowWrap >div { transition: all 0.6s; }
+                .shadowWrap >div:hover {box-shadow: none; }
+                .shadowWrap.bg1 > div {background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); }
+                .shadowWrap.bg2 > div {background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%); }
+                .shadowWrap.bg3 > div {background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); }
+                .shadowWrap.bg4 > div {background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%); }
+                .shadowWrap.bg5 > div {background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); }
+                .shadowWrap.bg6 > div {background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);}
+                .shadowWrap.bg7 > div {background:#880e4f ;}
+
+                .shadow01{ box-shadow: 0px 0px 0px     rgba(0, 0, 0, 0.5); }
+                .shadow02{ box-shadow: 2px 2px 5px     rgba(0, 0, 0, 0.5); }
+                .shadow03{ box-shadow: 4px 4px 5px     rgba(0, 0, 0, 0.5); }
+                .shadow04{ box-shadow: 5px 5px 5px     rgba(0, 0, 0, 0.5); }
+                .shadow05{ box-shadow: 8px 8px 5px     rgba(0, 0, 0, 0.5); }
+                .shadow06{ box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5); }
+                .shadow07{ box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.5); }
+                .shadow08{ box-shadow: 14px 14px 5px rgba(0, 0, 0, 0.5); }
+                .shadow09{ box-shadow: 16px 16px 5px rgba(0, 0, 0, 0.5); }
+                .shadow10{ box-shadow: 18px 18px 5px rgba(0, 0, 0, 0.6); }
+                .shadow10.active{
+                    animation-name: shadow10;
+                    animation-duration: 2s; 
+                    animation-iteration-count: 10;
+                }
+                @keyframes shadow10 {
+                    0% { box-shadow: 18px 18px 5px rgba(0, 0, 0, 0.6);  }
+                    10% {box-shadow: 18px 18px 5px rgba(0, 0, 0, 0.6);}
+                    40% { box-shadow: 16px 16px 5px rgba(0, 0, 0, 0.5); }
+                    80% {}
+                    100% {}
+                }
+
+                .shadow11{ box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5); }
+                .shadow12{ box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); }
+                .shadow13{ box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.5); }
+                .shadow14{ box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5); }
+                .shadow15{ box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5); }
+                .shadow16{ box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5); }
+                .shadow17{ box-shadow: 4px 4px 21px rgba(0, 0, 0, 0.5); }
+                .shadow18{ box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.5); }
+                .shadow19{ box-shadow: 4px 4px 27px rgba(0, 0, 0, 0.5); }
+                .shadow20{ box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.5); }
+                .shadow20.active{
+                    animation-name: shadow20;
+                    animation-duration: 2s;
+                    animation-iteration-count: 10;
+                }
+                @keyframes shadow20 {
+                    0% {  }
+                    10% {box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.5);}
+                    40% {box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5); }
+                    80% {}
+                    100% {}
+                }
+
+                .shadow21{ box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.5); }
+                .shadow22{ box-shadow: 0px 0px 0px 4px  rgba(0, 0, 0, 0.5); }
+                .shadow23{ box-shadow: 0px 0px 0px 6px  rgba(0, 0, 0, 0.5); }
+                .shadow24{ box-shadow: 0px 0px 0px 8px  rgba(0, 0, 0, 0.5); }
+                .shadow25{ box-shadow: 0px 0px 0px 10px  rgba(0, 0, 0, 0.5); }
+                .shadow26{ box-shadow: 0px 0px 0px 12px  rgba(0, 0, 0, 0.5); }
+                .shadow27{ box-shadow: 0px 0px 0px 14px  rgba(0, 0, 0, 0.5); }
+                .shadow28{ box-shadow: 0px 0px 0px 16px  rgba(0, 0, 0, 0.5); }
+                .shadow29{ box-shadow: 0px 0px 0px 18px  rgba(0, 0, 0, 0.5); }
+                .shadow30{ box-shadow: 0px 0px 0px 20px  rgba(0, 0, 0, 0.5); }
+                .shadow30.active{
+                    animation-name: shadow30;
+                    animation-duration: 2s;
+                    animation-iteration-count: 10;
+                }
+                @keyframes shadow30 {
+                    0% { }
+                    10% { box-shadow: 0px 0px 0px 14px  rgba(0, 0, 0, 0.5);}
+                    40% {box-shadow: 0px 0px 0px 18px  rgba(0, 0, 0, 0.5);}
+                    80% {}
+                    100% {}
+                }
+
+                .shadow31{ box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.5); }
+                .shadow32{ box-shadow: 0px 0px 3px 4px  rgba(0, 0, 0, 0.5); }
+                .shadow33{ box-shadow: 0px 0px 6px 6px  rgba(0, 0, 0, 0.5); }
+                .shadow34{ box-shadow: 0px 0px 9px 8px  rgba(0, 0, 0, 0.5); }
+                .shadow35{ box-shadow: 0px 0px 12px 10px  rgba(0, 0, 0, 0.5); }
+                .shadow36{ box-shadow: 0px 0px 15px 12px  rgba(0, 0, 0, 0.5); }
+                .shadow37{ box-shadow: 0px 0px 18px 14px  rgba(0, 0, 0, 0.5); }
+                .shadow38{ box-shadow: 0px 0px 21px 16px  rgba(0, 0, 0, 0.5); }
+                .shadow39{ box-shadow: 0px 0px 24px 18px  rgba(0, 0, 0, 0.5); }
+                .shadow40{ box-shadow: 0px 0px 27px 20px  rgba(0, 0, 0, 0.5); }
+                .shadow40.active{
+                    animation-name: shadow40;
+                    animation-duration: 2s;
+                    animation-iteration-count: 10;
+                }
+                @keyframes shadow40 {
+                    0% { }
+                    10% { box-shadow: 0px 0px 15px 12px  rgba(0, 0, 0, 0.5);}
+                    40% { box-shadow: 0px 0px 21px 16px  rgba(0, 0, 0, 0.5); }
+                    80% {}
+                    100% {}
+                }
+
+                .shadow41{ box-shadow: 0px 0px 5px -3px rgba(0, 0, 0, 0.5); }
+                .shadow42{ box-shadow: 0px 2px 5px -3px  rgba(0, 0, 0, 0.5); }
+                .shadow43{ box-shadow: 0px 4px 5px -3px  rgba(0, 0, 0, 0.5); }
+                .shadow44{ box-shadow: 0px 6px 5px -3px  rgba(0, 0, 0, 0.5); }
+                .shadow45{ box-shadow: 0px 8px 5px -3px  rgba(0, 0, 0, 0.5); }
+                .shadow46{ box-shadow: 0px 10px 5px -3px  rgba(0, 0, 0, 0.5); }
+                .shadow47{ box-shadow: 0px 12px 5px -3px rgba(0, 0, 0, 0.5); }
+                .shadow48{ box-shadow: 0px 14px 5px -3px  rgba(0, 0, 0, 0.5); }
+                .shadow49{ box-shadow: 0px 16px 5px -3px  rgba(0, 0, 0, 0.5); }
+                .shadow50{ box-shadow: 0px 18px 5px -3px  rgba(0, 0, 0, 0.5); }
+                .shadow50.active{
+                    animation-name: shadow50;
+                    animation-duration: 2s;
+                    animation-iteration-count: 10;
+                }
+                @keyframes shadow50 {
+                    0% { }
+                    10% { box-shadow: 0px 14px 5px -3px  rgba(0, 0, 0, 0.5);}
+                    40% {box-shadow: 0px 2px 5px -3px  rgba(0, 0, 0, 0.5);}
+                    80% {}
+                    100% {}
+                }
+
+                .shadow51{ box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5) inset; }
+                .shadow52{ box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5) inset; }
+                .shadow53{  box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.5) inset; }
+                .shadow54{  box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.5) inset;}
+                .shadow55{ box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.5) inset;}
+                .shadow56{  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.5) inset;}
+                .shadow57{ box-shadow: 0px 0px 11px 7px rgba(0, 0, 0, 0.5) inset; }
+                .shadow58{ box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.5) inset; }
+                .shadow59{  box-shadow: 0px 0px 13px 9px rgba(0, 0, 0, 0.5) inset;}
+                .shadow60{ box-shadow: 0px 0px 14px 10px rgba(0, 0, 0, 0.5) inset; }
+                .shadow60.active{
+                    animation-name: shadow60;
+                    animation-duration: 2s;
+                    animation-iteration-count: 10;
+                }
+                @keyframes shadow60 {
+                    0% { }
+                    10% {box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.5) inset; }
+                    40% {box-shadow: 0px 0px 11px 7px rgba(0, 0, 0, 0.5) inset;}
+                    80% {}
+                    100% {}
+                }
+                .shadow61{ box-shadow: 5px 5px 0px 0px #e91e63;}
+                .shadow62{ box-shadow: 5px 5px 0px 0px #e91e63,10px 10px 0px 0px #ec407a; }
+                .shadow63{ box-shadow: 5px 5px 0px 0px #e91e63,10px 10px 0px 0px #ec407a,15px 15px 0px 0px #f06292; }
+                .shadow64{ box-shadow: 5px 5px 0px 0px #e91e63,10px 10px 0px 0px #ec407a,15px 15px 0px 0px #f06292, 20px 20px 0px 0px #f48fb1;  }
+                .shadow65{ box-shadow: 5px 5px 0px 0px #e91e63,10px 10px 0px 0px #ec407a,15px 15px 0px 0px #f06292, 20px 20px 0px 0px #f48fb1, 25px 25px 0px 0px #f8bbd0;}
+                
+                .shadow66{ box-shadow: 0px 0px 0px 5px #e91e63  inset; }
+                .shadow67{ box-shadow: 0px 0px 0px 5px #e91e63  inset, 0px 0px 0px 10px #f06292  inset; }
+                .shadow68{ box-shadow: 0px 0px 0px 5px #e91e63  inset, 0px 0px 0px 10px #ec407a  inset,0px 0px 0px 15px #f06292  inset;  }
+                .shadow69{ box-shadow: 0px 0px 0px 5px #e91e63  inset, 0px 0px 0px 10px #ec407a  inset,0px 0px 0px 15px #f06292  inset, 0px 0px 0px 20px #f48fb1 inset; }
+                .shadow70{ box-shadow: 0px 0px 0px 5px #e91e63  inset, 0px 0px 0px 10px #ec407a  inset,0px 0px 0px 15px #f06292  inset, 0px 0px 0px 20px #f48fb1 inset, 0px 0px 0px 25px #f8bbd0  inset;}
+                .shadow70.active{
+                    animation-name: shadow70;
+                    animation-duration: 2s;
+                    animation-iteration-count: 10;
+                }
+                @keyframes shadow70 {
+                    0% {box-shadow: 0px 0px 0px 5px #e91e63  inset, 0px 0px 0px 10px #ec407a  inset,0px 0px 0px 15px #f06292  inset, 0px 0px 0px 20px #f48fb1 inset, 0px 0px 0px 25px #f8bbd0  inset; }
+                    10% {box-shadow: 0px 0px 0px 5px #e91e63  inset, 0px 0px 0px 10px #ec407a  inset,0px 0px 0px 15px #f06292  inset, 0px 0px 0px 20px #f48fb1 inset; }
+                    40% { box-shadow: 0px 0px 0px 5px #e91e63  inset, 0px 0px 0px 10px #ec407a  inset,0px 0px 0px 15px #f06292  inset;}
+                    80% {box-shadow: 0px 0px 0px 5px #e91e63  inset, 0px 0px 0px 10px #f06292  inset;}
+                    100% {box-shadow: 0px 0px 0px 5px #e91e63  inset;}
+                }
+           </style>
+
+            <!-- Intro1-->
+            <div class="bs-docs-section">
+                <h2 id="intro1" class="page-header">sample01</h2>
+                <div class="sample">
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only"> border-radius</em></h3>
+                        <div class="boxWrap shadowWrap bg1">
+                            <!-- div*10>span{radius$} -->
+                            <div class="shadow01"><span>shadow01</span></div>
+                            <div class="shadow02"><span>shadow02</span></div>
+                            <div class="shadow03"><span>shadow03</span></div>
+                            <div class="shadow04"><span>shadow04</span></div>
+                            <div class="shadow05"><span>shadow05</span></div>
+                            <div class="shadow06"><span>shadow06</span></div>
+                            <div class="shadow07"><span>shadow07</span></div>
+                            <div class="shadow08"><span>shadow08</span></div>
+                            <div class="shadow09"><span>shadow09</span></div>
+                            <div class="shadow10"><span>shadow10</span></div>
+                        </div>
+                    </div>
+                </div>
+<pre class="line-numbers language-css"><code>.radius01 {border-radius: 0px;}
+    .radius02 {border-radius: 10px;}
+    .radius03 {border-radius: 20px;}
+    .radius04 {border-radius: 30px;}
+    .radius05 {border-radius: 40px;}
+    .radius06 {border-radius: 50px;}
+    .radius07 {border-radius: 60px;}
+    .radius08 {border-radius: 70px;}
+    .radius09 {border-radius: 80px;}
+    .radius10 {border-radius: 90px;}
+    </code></pre>
+</div>
+            <!--//intro1-->
+            <!-- Intro2-->
+            <div class="bs-docs-section">
+                <h2 id="intro2" class="page-header">sample02</h2>
+                <div class="sample">
+                    <div class="boxWrap shadowWrap bg2">
+                        <!-- div*10>span{radius$} -->
+                        <div class="shadow11"><span>shadow11</span></div>
+                        <div class="shadow12"><span>shadow12</span></div>
+                        <div class="shadow13"><span>shadow13</span></div>
+                        <div class="shadow14"><span>shadow14</span></div>
+                        <div class="shadow15"><span>shadow15</span></div>
+                        <div class="shadow16"><span>shadow16</span></div>
+                        <div class="shadow17"><span>shadow17</span></div>
+                        <div class="shadow18"><span>shadow18</span></div>
+                        <div class="shadow19"><span>shadow19</span></div>
+                        <div class="shadow20"><span>shadow20</span></div>
+                    </div>
+                </div>
+<pre class="line-numbers language-css"><code>.radius01 {border-radius: 0px;}
+    .radius02 {border-radius: 10px;}
+    .radius03 {border-radius: 20px;}
+    .radius04 {border-radius: 30px;}
+    .radius05 {border-radius: 40px;}
+    .radius06 {border-radius: 50px;}
+    .radius07 {border-radius: 60px;}
+    .radius08 {border-radius: 70px;}
+    .radius09 {border-radius: 80px;}
+    .radius10 {border-radius: 90px;}
+    </code></pre>
+            </div>
+            <!--//intro2-->
+            <!-- Intro3-->
+            <div class="bs-docs-section">
+                <h2 id="intro3" class="page-header">sample03</h2>
+                <div class="sample">
+                    <div class="boxWrap shadowWrap bg3">
+                        <!-- div*10>span{radius$} -->
+                        <div class="shadow21"><span>shadow21</span></div>
+                        <div class="shadow22"><span>shadow22</span></div>
+                        <div class="shadow23"><span>shadow23</span></div>
+                        <div class="shadow24"><span>shadow24</span></div>
+                        <div class="shadow25"><span>shadow25</span></div>
+                        <div class="shadow26"><span>shadow26</span></div>
+                        <div class="shadow27"><span>shadow27</span></div>
+                        <div class="shadow28"><span>shadow28</span></div>
+                        <div class="shadow29"><span>shadow29</span></div>
+                        <div class="shadow30"><span>shadow30</span></div>
+                    </div>
+                </div>
+            </div>
+            <!--//intro3-->
+            <!-- Intro4-->
+            <div class="bs-docs-section">
+                <h2 id="intro4" class="page-header">sample04</h2>
+                <div class="sample">
+                    <div class="boxWrap shadowWrap bg4">
+                        <!-- div*10>span{radius$} -->
+                        <div class="shadow31"><span>shadow31</span></div>
+                        <div class="shadow32"><span>shadow32</span></div>
+                        <div class="shadow33"><span>shadow33</span></div>
+                        <div class="shadow34"><span>shadow34</span></div>
+                        <div class="shadow35"><span>shadow35</span></div>
+                        <div class="shadow36"><span>shadow36</span></div>
+                        <div class="shadow37"><span>shadow37</span></div>
+                        <div class="shadow38"><span>shadow38</span></div>
+                        <div class="shadow39"><span>shadow39</span></div>
+                        <div class="shadow40"><span>shadow40</span></div>
+                    </div>
+                </div>
+            </div>
+            <!--//intro4-->
+            <!-- Intro5-->
+            <div class="bs-docs-section">
+                <h2 id="intro5" class="page-header">sample05</h2>
+                <div class="sample">
+                    <div class="boxWrap shadowWrap bg5">
+                        <!-- div*10>span{radius$} -->
+                        <div class="shadow41"><span>shadow41</span></div>
+                        <div class="shadow42"><span>shadow42</span></div>
+                        <div class="shadow43"><span>shadow43</span></div>
+                        <div class="shadow44"><span>shadow44</span></div>
+                        <div class="shadow45"><span>shadow45</span></div>
+                        <div class="shadow46"><span>shadow46</span></div>
+                        <div class="shadow47"><span>shadow47</span></div>
+                        <div class="shadow48"><span>shadow48</span></div>
+                        <div class="shadow49"><span>shadow49</span></div>
+                        <div class="shadow50"><span>shadow50</span></div>
+                    </div>
+                </div>
+            </div>
+            <!--//intro5-->
+            <!-- Intro6-->
+            <div class="bs-docs-section">
+            <h2 id="intro6" class="page-header">sample06</h2>
+            <div class="sample">
+                <div class="boxWrap shadowWrap bg6">
+                    <!-- div*10>span{radius$} -->
+                    <div class="shadow51"><span>shadow51</span></div>
+                    <div class="shadow52"><span>shadow52</span></div>
+                    <div class="shadow53"><span>shadow53</span></div>
+                    <div class="shadow54"><span>shadow54</span></div>
+                    <div class="shadow55"><span>shadow55</span></div>
+                    <div class="shadow56"><span>shadow56</span></div>
+                    <div class="shadow57"><span>shadow57</span></div>
+                    <div class="shadow58"><span>shadow58</span></div>
+                    <div class="shadow59"><span>shadow59</span></div>
+                    <div class="shadow60"><span>shadow60</span></div>
+                </div>
+            </div>
+        </div>
+        <!--//intro6-->
+        <!-- Intro7-->
+        <div class="bs-docs-section">
+        <h2 id="intro7" class="page-header">sample07</h2>
+        <div class="sample">
+            <div class="boxWrap shadowWrap bg7">
+                <!-- div*10>span{radius$} -->
+                <div class="shadow61"><span>shadow61</span></div>
+                <div class="shadow62"><span>shadow62</span></div>
+                <div class="shadow63"><span>shadow63</span></div>
+                <div class="shadow64"><span>shadow64</span></div>
+                <div class="shadow65"><span>shadow65</span></div>
+                <div class="shadow66"><span>shadow66</span></div>
+                <div class="shadow67"><span>shadow67</span></div>
+                <div class="shadow68"><span>shadow68</span></div>
+                <div class="shadow69"><span>shadow69</span></div>
+                <div class="shadow70"><span>shadow70</span></div>
+            </div>
+        </div>
+    </div>
+    <!--//intro6-->
+        </div>
+        <!-- //col-md-12 -->
+
+    </div>
+    <!-- //row -->
+    </div>
+    <!-- //container -->
+    <!-- Footer -->
+    <footer class="bs-footer" role="contentinfo">
+        <div class="container">
+            <ul class="footer-links muted">
+                <li>Currently v2.0</li>
+                <li>&middot;</li>
+                <li><a href="https://smartwebuiux.tistory.com/">jiwonkim</a></li>
+                <li>&middot;</li>
+                <li><a href="https://smartwebuiux.tistory.com/" target="_blank">tstory</a></li>
+                <li>&middot;</li>
+                <li><a href="http://kjw911108.dothome.co.kr" target="_blank">dothome</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- //Footer -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="../assets/js/jquery-1.9.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/docs.min.js"></script>
+    <script src="../assets/js/prism.js"></script>
+    <script>
+        $(".shadow70").click(function(){
+            $(".shadow70").addClass("active");
+        });
+        $(".shadow60").click(function(){
+            $(".shadow60").addClass("active");
+        });
+        $(".shadow50").click(function(){
+            $(".shadow50").addClass("active");
+        });
+        $(".shadow40").click(function(){
+            $(".shadow40").addClass("active");
+        });
+        $(".shadow30").click(function(){
+            $(".shadow30").addClass("active");
+        });
+        $(".shadow20").click(function(){
+            $(".shadow20").addClass("active");
+        });
+        $(".shadow10").click(function(){
+            $(".shadow10").addClass("active");
+        });
+
+        // document.querySelector(".shadow70").addEventListener("click",function(){});
+    </script>
+</body>
+
+</html>

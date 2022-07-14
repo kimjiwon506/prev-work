@@ -1,0 +1,13 @@
+/* 여백 초기화 */
+body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,
+fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption{
+margin:0; padding:0;}
+
+/* a 링크 초기화 */
+a {color: #fff; text-decoration: none;}
+a:hover {color:gray;}
+.black{color: #111; text-decoration: none;}
+
+/* 반응형 */
+video, img {width: 100%;}
+img{vertical-align: top;}

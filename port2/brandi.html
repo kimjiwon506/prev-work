@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandi</title>
+    <!-- WEBFONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {height: 200000px; font-family: 'Anton', sans-serif;}
+        em {font-style: normal;}
+        .scroll {
+            position: fixed; right: 10px; top: 10px;
+            width: 50px; height: 50px; line-height: 50px;
+            text-align: center; color: #fff;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000000;
+        }
+        
+        #section1{position: relative; z-index: 9000;}
+        #section2{position: relative; z-index: 8000; background: #ccc; height: 300vh;}
+
+        .sec1{width: 100%; height: 13000px;background: #ccc;}
+        .sec2{position: static; width: 100%; height: 100vh; left: 0; top: 0;}
+
+        /* #section1 {background: #333; position: relative; z-index: 9000;}
+        #section2 {position: fixed; z-index: 8000; background: #333; height: 200vh;}
+        #section3 {position: relative; z-index: 6000; background: #555;}
+        #section4 {background: #333;}
+        #section5 {background: #333;}
+        #section6 {background: #333;} */
+
+        
+        /* common */
+        .fixed {
+            position: fixed;
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+        .fixed2 {position: fixed; left: 0; top: 0;} 
+        img {
+            width: 100%;
+            vertical-align: top;
+            object-fit: cover;
+        }
+        em{color: hotpink;}
+        span{color: #333; font-size: 5vw;}
+        .off {opacity: 0;}
+        .right {transform: translateX(33vw);}
+        .center {transform: translateX(4vw);}
+        .left {transform: translateX(-30vw);}
+
+        /* SECTION1 */
+        .s1Txt01{color: #fff; font-size: 6vw; left: 20%; }
+        .s1Txt02{color: #fff; font-size: 6vw; left: 53%;}
+        .s1Txt03{color: #fff; font-size: 6vw; left: 53%;}
+        .s1Txt04{color: #fff; font-size: 6vw; left: 53%;}
+        .s1Txt05{background: url(./assets/img/slideimg3bg.jpg)no-repeat center/cover;}
+        .s1Txt05 span{position: absolute; left:0%; top: 50%; font-size: 4vw; height: 5vh; width: 100%;}
+        /* //SECTION1 */
+
+        /* section02 */
+        .sec2{}
+        .sec2_wrap{overflow: hidden; width:300vw;}
+        .sec2_1{float: left; width: 100vw; height: 100vh; background:#ccc;}
+        .sec2_2{float: left; width: 100vw; height: 100vh; background:#eee;}
+    </style>
+</head>
+<body>
+    <div class="scroll">0</div>
+    <div id="contents">
+        <div id="section1" data-0="display:block;" data-13000="display:none;">
+            <div class="sec1">
+                <div class="s1Txt01 fixed"
+                    data-0="bottom:-70%; opacity:0;" data-600="bottom:20%; opacity:1;"data-4800="bottom:20%; display:block;"  data-4900="bottom:-50%; display:none;">HELLO BRANDI!
+                </div>
+                <div class="s1Txt02 fixed"
+                data-1100="bottom:-70%; opacity:0;"
+                data-1400="bottom:20%; opacity:1;" 
+                data-2000="bottom:20%; display:block"
+                data-2500="bottom:90%; display:none">THIS IS <em>JIWON</em> 
+                </div>
+                <div class="s1Txt03 fixed"
+                data-2500="bottom:-70%; opacity:0;"
+                data-3000="bottom:20%; opacity:1;" 
+                data-3500="bottom:20%; display:block"
+                data-4000="bottom:90%; display:none"><em>SUPPORT</em> YOU
+                </div>
+                <div class="s1Txt04 fixed"
+                data-5700="left:-70%; opacity:0;"
+                data-6500="left:35%; opacity:1;" 
+                data-7500="left:35%; opacity:0"
+                data-8500="left:-70%; opacity:1;"
+                >I WILL SHOW YOU WHAT I DID
+                </div>
+                <div class="s1Txt05 fixed"
+                data-9000="transform: translate(-170%, -32%) rotate(0deg) width: 0vw; height: 0vw; opacity:0;"
+                data-9500="transform: translate(-170%, -32%) rotate(10deg) width: 30vw; height: 20vw; opacity:1;" 
+                data-10000="width: 30vw; height: 30vw; opacity:1;"
+                data-13000="width: 200vw; height: 100vw; opacity:1;"
+                ><span>GO TO MY WORKS</span>
+                </div>
+            </div>
+        </div>
+        <!-- //section1 -->
+        <div id="section2">
+            <div class="sec2">
+                <div class="sec2_wrap">
+                    <div class="sec2_1"></div>
+                    <div class="sec2_2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- //section2 -->
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
+    <script src="js/jquery.min_1.12.4.js"></script>
+    <script src="js/jquery-ui-1.12.1.min.js"></script>
+    <script src="js/easypiechart.min.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        // var s = skrollr.init();
+        var s = skrollr.init({
+            edgeStrategy: 'set',
+            easing: 'linear'
+        });
+
+        $(window).scroll(function(){
+            let scrollTop = $(window).scrollTop();
+            $(".scroll").text(scrollTop);
+        })
+    </script>
+
+</body>
+
+</html>

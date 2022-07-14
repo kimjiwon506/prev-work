@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout07</title>
+    <style>
+        @font-face {
+            font-family:'S-CoreDream-8Heavy';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff'); 
+            font-weight: normal; 
+            font-style: normal; 
+        }
+        /*reset : 초기화*/
+        * {
+            padding: 0; 
+            margin: 0;
+        }
+
+        /*layout : 전체영역*/
+        
+        #wrap{
+            font-size: 40px;
+            font-family:'S-CoreDream-8Heavy';
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        #header { 
+            height: 140px; 
+            background-color: #fafafa;
+        }
+        #header_top {
+            height: 80px;
+            line-height: 80px;
+            background-color: #fff3e0;
+        }
+        #header_bom {
+            height: 60px;
+            line-height: 60px;
+            background-color: #ffe0b2;
+        }
+        #banner { 
+            height: 400px; 
+            line-height: 400px;
+            background-color: #ffcc80;
+        }
+        #content1 {
+            height: 300px;
+            background-color: #ffb74d;
+            line-height: 300px;
+        }
+        #content2 {
+            height: 900px;
+            background-color: #ffa726;
+            line-height: 900px;
+        }
+        #content3 {
+            height: 1600px;
+            background-color: #ff9800;
+            line-height: 1600px;
+        }
+        #content4 {
+            height: 400px;
+            background-color: #fb8c00;
+            line-height: 400px;
+        }
+        #footer { 
+            height: 200px; 
+            background-color: #424242;
+        }
+        #footer_top {
+            height: 45px;
+            line-height: 45px;
+            background-color: #ef6c00;
+        }
+        #footer_bom {
+            height: 155px;
+            line-height: 155px;
+            background-color: #e65100;
+        }
+        /*container :가운데영역*/
+        .container {
+            width: 1280px; 
+            height: inherit; 
+            margin: 0 auto; 
+            background-color: rgba(0,0,0,0.3);
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!--header-->
+        <div id="header">
+            <div id="header_top">
+                <div class="container">header_top</div>
+            </div>
+            <div id="header_bom">
+                <div class="container">header_bom</div>
+            </div>
+        </div>
+        <!--//header-->
+
+        <!--banner-->
+        <div id="banner">
+            <div class="container">banner</div>
+        </div>
+        <!--//banner-->
+        
+        <!--content-->
+        <div id="contents">
+            <div id="content1"> 
+                <div class="container">content1</div>
+            </div>
+            <div id="content2"> 
+                <div class="container">content2</div>
+            </div>
+            <div id="content3"> 
+                <div class="container">content3</div>
+            </div>
+            <div id="content4"> 
+                <div class="container">content4</div>
+            </div>
+        </div>
+        <!--//content-->
+
+        <!--footer-->
+        <div id="footer">
+            <div id="footer_top">
+                <div class="container">footer_top</div>
+            </div>
+            <div id="footer_bom">
+                <div class="container">footer_bom</div>
+            </div> 
+        </div>
+        <!--//footer-->
+    </div>
+    
+</body>
+</html>

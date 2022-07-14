@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript_home</title>
+</head>
+<body>
+    <script>
+        //함수출력
+        function func1(){
+            document.write("개화기 요정_1");
+        }
+        func1();
+        document.write("<br>");
+        //익명함수 - 익명 함수는 함수명 대신 변수명에 함수 코드를 저장하는 구현 방식
+       const fucn2 = function(){
+           document.write("개화기 요정_2");
+       }
+       fucn2();
+       document.write("<br>");
+       //매개변수가 있는 함수
+       const func3 =function(name,number){
+           document.write("개화기"+name+number);
+       }
+       func3("요정","_3");
+       document.write("<br>");
+       //매개변수 + 함수
+       function func4(name,loc){
+           document.write(name+loc);
+           document.write("<br><br>");
+           document.write(name+loc);
+       }
+       func4("강남역껍데기","강남역");
+       func4("개화기요정","강남역");
+       document.write("<br>");
+       //리턴값(종료)이 있는 함수 - 변수먼저 지정해주고 그뒤에 return
+      function func5(){
+          const str = "개화기 요정_5";
+          return str;
+      }
+      document.write(func5());
+      document.write("<br>");
+       //즉시 실행 함수-변수명입력x , 함수뒤 출력해주는 () 표시 해주기
+       (function(){
+           document.write("개화기요정_6");
+       }());
+       document.write("<br>");
+       //리턴값 + 매개변수 - return뒤에 = 붙이지 말기... 
+       function func6(name,location){
+           return  name + location;
+       }
+       let result = func6("개화기요정_7","강남역");
+       document.write(result);
+       document.write("<br>");
+        //화살표 함수(기본)() => {    //실행문};
+        fucn7 = () => {
+            document.write("개화기요정_8");
+        }
+        fucn7();
+        //화살표 함수(익명)
+        //화살표 함수(리턴문)
+       //화살표 함수(익명 함수)
+        //화살표 함수(괄호)
+        //화살표 함수(괄호 생략)
+       //객체 생성자 함수
+       function func7(name,location){
+           this.name = "개화기";
+           this.location = "요정_8";
+           this.c = function(){
+               return name * lacation;
+           }
+       }
+       const result1 = new obj1(name);
+       const result2 = new obj1(location);
+       document.write(obj1.c);
+       //프로토타입 메서드
+       //클래스(es6)
+       //템플릿 리터럴
+       //for in문
+      //for of문
+    </script>
+</body>
+</html>

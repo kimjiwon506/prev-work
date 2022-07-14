@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoverEfferct</title>
+    <style>
+@font-face {
+    font-family: 'DWImpactamin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/DWImpactamin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'DWImpactamin';
+	height: 100vh;
+	background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.hover_wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+.hover_wrap > div {
+	position: relative;
+	max-width: 600px;
+	margin: 1%;
+	perspective: 1000px;
+}
+.hover_wrap > div img {
+	width: 100%; vertical-align: top;
+	border: 7px solid #cfd8dc;
+	box-sizing: border-box;
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.4);
+}
+.hover_wrap > div .front {
+	transition: transform 1s;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+}
+.hover_wrap > div .back {
+	transition: transform 1s;
+	transform-style: preserve-3d;
+	position: absolute; left: 0; top: 0; z-index: -1;
+}
+.hover_wrap > div figcaption {
+	backface-visibility: hidden;
+	position: absolute; left: 50%; top: 50%;
+	transform: translate(-50%, -50%) translatez(100px);
+	color: #fff;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 15px;
+	text-align: center;
+	line-height: 1.4;
+}
+
+/* hover Effect */
+.hover_wrap > div.hover7 .front {
+	transform: rotateX(0deg);
+}
+.hover_wrap > div.hover7:hover .front {
+	transform: rotateX(180deg);
+}
+.hover_wrap > div.hover7 .back {
+	transform: rotateX(-180deg);
+}
+.hover_wrap > div.hover7:hover .back {
+	transform: rotateX(0deg);
+}
+
+.hover_wrap > div.hover8 .front {
+	transform: rotateY(0deg);
+}
+.hover_wrap > div.hover8:hover .front {
+	transform: rotateY(180deg);
+}
+.hover_wrap > div.hover8 .back {
+	transform: rotateY(-180deg);
+}
+.hover_wrap > div.hover8:hover .back {
+	transform: rotateY(0deg);
+}
+    </style>
+</head>
+<body>
+    <div class="hover_wrap">
+        <div class="hover7">
+            <figure class="front">
+                <img src="img/img01.jpg" alt="이미지">
+                <figcaption>
+                    <h3>[제1회] 단종 문화제 포스터</h3>
+                    <p>운명으로 왕이 된 왕 단종을 위하여.</p>
+                </figcaption>
+            </figure>
+            <figure class="back">
+                <img src="img/img02.jpg" alt="이미지">
+                <figcaption>
+                    <h3>[제1회] 단종 문화제 포스터</h3>
+                    <p>운명으로 왕이 된 왕 단종을 위하여</p>
+                </figcaption>
+            </figure>
+        </div>
+        
+        <div class="hover8">
+            <figure class="front">
+                <img src="img/img03.jpg" alt="이미지">
+                <figcaption>
+                    <h3>인천 도시철도 1호선  시각정보 및 환경디자인 공모전</h3>
+                    <p>실내요소가 통일되지 못한 현황으로 통행안내를 제시하는 통합적 안내사인을 제공</p>
+                </figcaption>
+            </figure>
+            <figure class="back">
+                <img src="img/img04.jpg" alt="이미지">
+                <figcaption>
+                    <h3>인천 도시철도 1호선  시각정보 및 환경디자인 공모전</h3>
+                    <p>실내요소가 통일되지 못한 현황으로 통행안내를 제시하는 통합적 안내사인을 제공</p>
+                </figcaption>
+            </figure>
+        </div>
+        
+    </div>
+</body>
+</html>

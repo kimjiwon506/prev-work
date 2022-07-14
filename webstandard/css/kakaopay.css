@@ -1,0 +1,36 @@
+/*font*/
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*layout*/
+#wrap {width: 100%;    font-family: 'S-CoreDream-5Medium';}
+#header {width: 100%; height: 90px; background: #fff; }
+#header h1{ float: left;  }
+#header a.logo{display: inline-block; padding: 30px 0 0 100px;}
+#header ul{ overflow: hidden; float: right; margin: 20px 100px 0 0;}
+#header li{ float: left; font-size: 18px; font-weight: 600; padding: 13px;  }
+#banner {width: 100%; height: 470px; background: #ffac1f; background: url(../kakaopay/top-visual-retailfinance.jpg) center top no-repeat;} 
+#banner h2{font-size: 50px; font-weight: 800; color: #fff; padding: 350px 0 0 0;}
+#section {width: 100%;  background: #fff; }
+#section_1 {width: 100%; height: 370px; background:#fff;}
+#section_1 .section_1_1{ padding: 0 0 0 0; position: relative;}
+#section_1 .section_1_1 h3{font-size: 44px;  font-weight: 800;   color: #1e1e1e;  margin:60px 0 30px 0; }
+#section_1 .section_1_1 p{line-height: 60px; font-size: 20px; color: #666; font-weight: bold; margin: 0 30px 0 0;}
+#section_1 .section_1_1 a{ position: absolute; top: 100px; right: 100px;}
+#section_2 {width: 100%;  overflow: hidden;}
+#section_2 .section_2left{width: 50%; height: 400px; float: left;background: url(../kakaopay/pic-retailfinance1.jpg) center top no-repeat;}
+#section_2 .section_2right{width: 50%; height: 400px;float: left; } 
+#section_2 .section_2right h3{font-size: 40px;    font-weight: 600;    color: #1e1e1e;    margin-bottom: 5%; padding: 50px 0 0 30px;} 
+#section_2 .section_2right p{font-size: 18px;    font-weight: 600;  line-height: 50px;  color: #1e1e1e;    margin-bottom: 5%; padding: 50px 0 0 30px; } 
+#section_3 {clear: both; width: 100%;}
+#section_3 .section_3_left{ width: 50%; height: 400px;float: left; }
+#section_3 .section_3_left h3{ font-size: 40px;    font-weight: 600;    color: #1e1e1e;    margin-bottom: 5%; padding: 50px 0 0 30px; }
+#section_3 .section_3_left p {font-size: 18px;    font-weight: 600;  line-height: 50px;  color: #1e1e1e;    margin-bottom: 5%; padding: 50px 0 0 30px; }
+#section_3 .section_3_right {width: 50%; height:400px; float:right;background: url(../kakaopay/pic-retailfinance2.png) center top no-repeat; }
+#footer {width: 100%; height: 310px; background: black;}
+
+/*container*/
+.container { width: 1400px; margin: 0 auto; height: inherit; }

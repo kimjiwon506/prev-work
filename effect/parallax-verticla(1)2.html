@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax-vertical</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'NEXON Lv2 Gothic Light';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        *{margin: 0; padding: 0; font-family: 'NEXON Lv2 Gothic Light';}
+        #section1 {
+            height: 100vh;
+            background: #111;
+        }
+        #section2 {
+            height: 100vh;
+            background: #333;
+        }
+        #section3 {
+            height: 100vh;
+            background: #111;
+        }
+        #section4 {
+            height: 100vh;
+            background: #333;
+        }
+        #section5 {
+            height: 100vh;
+            background: #111;
+        }
+        #section6 {
+            height: 100vh;
+            background: #333;
+        }
+        #section1 .imgWrap .img {
+            background: url(img/images15@2.png);
+            background-size: cover;
+            width: 100%; height: 100%;
+        }
+        #section2 .imgWrap .img {
+            background: url(img/images16@2.png);
+            background-size: cover;
+            width: 100%; height: 100%;
+        }
+        #section3 .imgWrap .img {
+            background: url(img/images17@2.png);
+            background-size: cover;
+            width: 100%; height: 100%;
+        }
+        #section4 .imgWrap .img {
+            background: url(img/images18@2.png);
+            background-size: cover;
+            width: 100%; height: 100%;
+        }
+        #section5 .imgWrap .img {
+            background: url(img/images19@2.png);
+            background-size: cover;
+            width: 100%; height: 100%;
+        }
+        #section6 .imgWrap .img {
+            background: url(img/images19@2.png);
+            background-size: cover;
+            width: 100%; height: 100%;
+        }
+        .content-item {
+            position: relative;
+        }
+        .content-item .num {
+            position: absolute;
+            left: 60%; top: 0%;
+            font-size: 15vw;
+            color: #000;
+            z-index: 90;
+            font-weight: 100;
+            opacity: 0.2222;
+            letter-spacing: -1vw;
+        }
+        .content-item .imgWrap {
+            position: absolute;
+            left: 50%; top:60%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            width: 50vw; height: 50vh;
+        }
+        .content-item .content-item .imgWrap .img {
+            /* background: url(img/images01); */
+            background-size: cover;
+            width: 100%; height: 100%;
+            background: #000;
+        }
+        .content-item .title {
+            position: absolute; left: 8%; top: 60%;
+            width: 50vw;
+            font-size: 3vw;
+            line-height: 1.4;
+            color: #fff;
+            z-index: 110;
+            word-break: keep-all;
+            font-family: 'NEXON Lv2 Gothic Light';
+        }
+        /* 가로스크롤링 기본 셋팅 */
+        body {
+            height: 10000px;
+        }
+        #contents {
+            width: 7200px;
+            overflow: hidden;
+            position: fixed;
+            left: 0; top: 0;
+        }
+        #contents  > section {
+            float: left;
+            width: 1200px;
+        }
+        .character {
+            width: 200px; height: 200px;
+            position: fixed;
+            left: 50%; bottom: 0;
+            margin-left: -90px;
+            z-index: 200;
+            background-image: url(img/robby.png);
+            background-size: 1800px;
+        }
+        .character.walking {
+            animation: walk 0.8s steps(9, start) infinite;
+        }
+        .character.left {
+            background-position: 0 -200px;
+            animation: walk2 0.8s steps(9, start) infinite;
+        }
+        @keyframes walk {
+            0%   {background-position: 0px 0px;}
+            100% {background-position: -1800px 0px;}
+        }
+        @keyframes walk2 {
+            0%   {background-position: 0px -200px;}
+            100% {background-position: -1800px -200px;}
+        }
+
+        /* #section3 .imgWrap {
+            opacity:0;
+        }
+        #section3 .title{opacity:0;}
+        #section3 .num{opacity:0;} */
+    </style>
+</head>
+<body>
+    <div class="character"></div>
+    <section id="contents">
+        <section id=section1 class="content-item">
+            <span class="num">01</span>
+            <div class="imgWrap">
+                <div class="img"></div>
+            </div>
+            <div class="title">목적없는 공부는 기억에 해가 될 뿐이며, 머리속에 들어온 어떤 것도 간직하지 못한다.</div>
+        </section> 
+        <!-- //section1 -->
+        <section id=section2 class="content-item">
+            <span class="num">02</span>
+            <div class="imgWrap">
+                <div class="img"></div>
+            </div>
+            <div class="title">인생에서 가장 위대한 교훈은, 심지어는 바보도 어떨 때는 옳다는 걸 아는 것이다.</div>
+        </section> 
+        <!-- //section2 -->
+        <section id=section3 class="content-item">
+            <span class="num">03</span>
+            <div class="imgWrap">
+                <div class="img"></div>
+            </div>
+            <div class="title">행동만이 삶에 힘을 주고, 절제만이 삶에 매력을 준다.</div>
+        </section> 
+        <!-- //section3 -->
+        <section id=section4 class="content-item">
+            <span class="num">04</span>
+            <div class="imgWrap">
+                <div class="img"></div>
+            </div>
+            <div class="title">많은 공부와 지식이 곧 지혜로 연결되는 것은 아니다.</div>
+        </section> 
+        <!-- //section4 -->
+        <section id=section5 class="content-item">
+            <span class="num">05</span>
+            <div class="imgWrap">
+                <div class="img"></div>
+            </div>
+            <div class="title">행동은 말보다 더 새빨간 거짓말을 한다.</div>
+        </section> 
+        <!-- //section5 -->
+        <section id=section6 class="content-item">
+            <span class="num">06</span>
+            <div class="imgWrap">
+                <div class="img"></div>
+            </div>
+            <div class="title">교육은 배운 것이 잊혀졌을 때 살아 남는 것이다.</div>
+        </section> 
+        <!-- //section6 -->
+    </section>
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script>
+        // $(window).scroll(function(){
+        //     const scroll = $(window).scrollTop(); //전체 h값을 구해준다.
+        //     $("#contents").css("left", -scroll); // 전체 h값을 가로 값에 넣어준다. -scroll값으로 왼쪽으로 가게 해준다.
+        // });
+        let lastScrollTop = 0;
+        const totalWidth = $("#contents").width(); //6827
+        $("body").css("height",totalWidth);
+        //스크롤이 됐을 때 캐릭터를 움직이게 만들어 주는 스크립트
+        $(window).scroll(function(){
+            let wScroll = $(window).scrollTop();
+            let wWidth = $(window).width();
+            let wHeight = $(window).height();
+            let dHeight = $("body").height() - wHeight; //전체 세로 값 - 현재 화면의 세로 값
+            let dWidth = totalWidth - wWidth;        //전체 가로 값 - 현재 화면의 가로 값 
+            let step = dWidth/dHeight;
+            let goLeft = wScroll * step;
+            // console.log(goLeft);
+            $("#contents").css("left", -goLeft);
+            clearTimeout($.data(this,"scollCheck"));
+            $.data(this, "scollCheck", setTimeout(function(){
+                $(".character").removeClass("walking");
+            },100))
+            if( wScroll > lastScrollTop ){
+                $(".character").removeClass("left");
+                $(".character").addClass("walking");
+            } else {
+                $(".character").addClass("left");
+                $(".character").addClass("walking");
+            }
+            lastScrollTop = wScroll;
+
+            if(wScroll > $("#section3").position().left + $(window).width()/2 ) {
+                $("#section3").css("background","#fff");
+                gsap.to("#section3 .imgWrap",{duration:0.4, opacity:1, top:"50%"});
+                gsap.to("#section3 .title",{duration:0.4, opacity:1, delay:0.4, top:"60%"});
+                gsap.to("#section3 .num",{duration:0.4, opacity:1, delay:0.8, left:"70%"});
+            }
+
+        });
+
+        $(document).keydown(function(e){
+            if(e.which == 39){
+                let scrollTop = $(document).scrollTop();
+                $(window).scrollTop(scrollTop + 50);
+            }
+            if(e.which == 37){
+                let scrollTop = $(document).scrollTop();
+                $(window).scrollTop(scrollTop - 50);
+            }
+            //console.log(event.keyCode); keyCode치면 키 값 알아낼 수 있다.
+        })
+    </script>
+</body>
+</html>

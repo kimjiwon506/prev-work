@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'BMJUA';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'BMJUA';
+            height: 100vh;
+            background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+        }
+
+        .hover_wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .hover_wrap>div {
+            position: relative;
+            max-width: 500px;
+            margin: 1%;
+            perspective: 1000px;
+        }
+
+        .hover_wrap>div img {
+            width: 100%;
+            vertical-align: top;
+            border: 7px solid #bdbdbd;
+            box-sizing: border-box;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        .hover_wrap>div .front {
+            transition: transform 1s;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+        }
+
+        .hover_wrap>div .back {
+            transition: transform 1s;
+            transform-style: preserve-3d;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        .hover_wrap>div figcaption {
+            backface-visibility: hidden;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) translatez(100px);
+            color: #fff;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 15px;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        /* hover Effect */
+        .hover_wrap>div.hover7 .front {
+            transform: rotateX(0deg);
+        }
+
+        .hover_wrap>div.hover7:hover .front {
+            transform: rotateX(180deg);
+        }
+
+        .hover_wrap>div.hover7 .back {
+            transform: rotateX(-180deg);
+        }
+
+        .hover_wrap>div.hover7:hover .back {
+            transform: rotateX(0deg);
+        }
+
+        .hover_wrap>div.hover8 .front {
+            transform: rotateY(0deg);
+        }
+
+        .hover_wrap>div.hover8:hover .front {
+            transform: rotateY(180deg);
+        }
+
+        .hover_wrap>div.hover8 .back {
+            transform: rotateY(-180deg);
+        }
+
+        .hover_wrap>div.hover8:hover .back {
+            transform: rotateY(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hover_wrap">
+        <div class="hover7">
+            <figure class="front">
+                <img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/hover05.jpg" alt="이미지">
+                <figcaption>
+                    <h3>Mouse Hover Effect07</h3>
+                    <p>마우스 오버 효과입니다.</p>
+                </figcaption>
+            </figure>
+            <figure class="back">
+                <img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/hover06.jpg" alt="이미지">
+                <figcaption>
+                    <h3>Mouse Hover Effect07</h3>
+                    <p>마우스 오버 효과입니다.</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="hover8">
+            <figure class="front">
+                <img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/hover03.jpg" alt="이미지">
+                <figcaption>
+                    <h3>Mouse Hover Effect08</h3>
+                    <p>마우스 오버 효과입니다.</p>
+                </figcaption>
+            </figure>
+            <figure class="back">
+                <img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/hover10.jpg" alt="이미지">
+                <figcaption>
+                    <h3>Mouse Hover Effect08</h3>
+                    <p>마우스 오버 효과입니다.</p>
+                </figcaption>
+            </figure>
+        </div>
+
+    </div>
+</body>
+
+</html>

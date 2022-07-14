@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /*FONT*/
+    .nanumsquare {font-family: 'NanumSquare', sans-serif !important;}
+    /* 여백 초기화 */
+    figure, figcaption, body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form {margin: 0; padding: 0;}
+    /*이미지초기화*/
+    img {width: 100%; vertical-align: top;}
+    /* 폰트 스타일초기화*/
+    em{font-style: normal;}
+    /* a 링크 초기화 */
+    a {color: #222; text-decoration: none;}
+    a:hover {color:#3192bf;}
+
+    /* 폰트 초기화 */
+    body, input, textarea, select, button, table {
+        font-family: 'NanumSquare';}
+
+    /* 폰트 스타일 초기화 */
+    em, address {font-style: normal;}
+
+    /* 블릿기호 초기화 */    
+    dl, ul, li, ol, menu {list-style: none;}
+
+    /* 제목 태그 초기화 */
+    h1, h2, h3, h4, h5, h6 {font-size: 13px; color:#222; font-weight: normal;}
+
+    /* 테두리 초기화 */
+    img, fieldset {border: 0 none;}
+
+    /* CONTAINER */
+    .container {height: inherit; width: 1400px; margin: 0 auto; }
+    /* background: rgba(255,255,255,0.4); */
+
+    /* LAYOUT */
+    #wrap{}
+    #header{height: 90px; width: 100%; background: #fff; position: fixed;  z-index:1000;}
+    .header{overflow: hidden; height: 90px;}
+    .header h1{ width: 30%; float: left; margin-left: 30px; }
+    .header h1 a{display: inline-block; width: 150px; height:30px; background-image: url(img/svg_icon.png); background-position:-4px -62px; margin-top:25px;}
+    .header ul.menu{float: left; width: 40%;}
+    .header ul.menu li{display: inline-block; font-size: 16px; font-weight: 700; line-height: 16px; color:#a8a8a8;}
+    .header ul.menu li a{display: block; height: 86px;   padding: 34px 30px;  color:#292929;  font-size: 16px;  font-weight: 700;  line-height: 16px; }
+    .header ul.btn {overflow: hidden; float: left;  width: 20%; }
+    .header ul.btn li {float: right; color: rgba(255,255,255,.8); width: 100px; margin-top: 20px;} 
+    .header ul.btn li a{margin-left: 8px; font-size: 12px; font-weight: 700;display: inline-block; width: 80px; height: 40px; padding:0px 0 0 0px; border: 1px solid rgba(0,0,0,.4); text-align: center; color: #939393; border-radius: 3px; line-height: 40px;}  
+    .header ul.btn li a:hover {background:white;}
+
+     #banner{
+         animation: slide 8s infinite; 
+         }
+         @keyframes slide{
+        0%{background: url(img/research_intro_main_1.png) no-repeat center; background-size: cover; animation: 1s ease infinite; }
+        50%{background: url(img/research_intro_main_2.png) no-repeat center; background-size: cover; animation: 1s ease infinite; }
+        100%{background: url(img/research_intro_main_3.png) no-repeat center; background-size: cover; animation: 1s ease infinite; }
+    }
+    .banner {margin: 0 auto; text-align: left; padding-top: 182px; padding-left: 60px;}
+    .banner h2{font-size: 40px; font-weight: 900; color: #fff; }
+    .banner p{font-size: 18px;color: #fff; margin-top: 17px; font-weight: 300; line-height: 32px;}
+    .banner ul{overflow: hidden;}
+    .banner li{float: left; margin-top: 50px; padding-bottom: 160px;}
+    .banner li:nth-child(2){margin-left: 30px;}
+    .banner li a{
+        display: inline-block; 
+        color:#fff; padding: 20px 40px; 
+        border:1px solid #fff; font-size: 18px; border-radius: 10px;
+    }
+
+    .cont1{width: 100%;color: #fff; text-align: left; padding-top: 140px; position: relative;}
+    .cont1 .cont1_lang_btn a{display: inline-block; border: 1px solid #dbdbdb; border-radius: 2px; padding:5px;
+    width: 76px; height: 32px; margin: -1px; border: 1px solid transparent; border-radius: 2px;  font-size: 13px;  line-height: 34px; text-align: center; color: #888;
+    }
+    .cont1 .cont1_lang_btn .btn_english{position: absolute; top:30px; right: 300px;  background: #ededed;}
+    .cont1 .cont1_lang_btn .btn_korean{ position: absolute; top:30px; right: 212px;  background: #fff; color:#2ebc76; border: 1px solid #dbdbdb;}
+    .cont1 strong{font-size: 42px; line-height: 44px; font-weight: 400;  color: #000;}
+    .cont1 em{ color:#05d686; }
+    .cont1 p{ padding: 0 0 23px;font-size: 17px; line-height: 33px; color: #333; }
+    .cont1 .btn_area{padding-bottom: 45px;}
+    .cont1 .btn_area a{
+        display: inline-block; line-height: 45px; padding: 0 40px; border: 1px solid #dbdbdb; border-radius: 4px; font-size: 14px; font-weight: 700;
+        color: #888; box-sizing: border-box; box-sizing: border-box;
+    }
+    .cont1 ul{ padding: 45px 0 16px;}
+    .cont1 li{ position: relative; float: left; width: 264px; height: 338px; margin: 0 10px 10px 0; padding: 0 36px 0 36px; border: 1px solid #e9e9e9;
+    background: #fff;}
+    .cont1 strong{display: block;padding-top: 37px;font-size: 19px; font-weight: 500;line-height: 24px; color: #2ebc76;}
+    .cont1 p{margin-top: 10px;color:#888; font-size: 16px; line-height: 30px; text-decoration: none; cursor: pointer;}
+    .cont1 a{ }
+    .cont1 .cont1_lang_btn_a::after{
+        content: '';
+        background: url(img/sp_icon.png); 
+        background-position: -650px -282px; background-repeat: no-repeat; width: 7px; height: 11px;display: inline-block; 
+        margin-left: 4px; vertical-align: -1px;
+    }
+</style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="header">
+                    <h1 class="logo"><a href="#"></a></h1>
+                    <ul class="menu">
+                        <li><a href="./cloverLayout01_sub.html">기술·솔루션</a></li>
+                        <li><a href="./cloverLayout02_sub.html">제품</a></li>
+                        <li><a href="./cloverLayout03_sub.html">플랫폼</a></li>
+                        <li><a href="./cloverLayout04_sub.html">파트너</a></li>
+                        <li><a href="./cloverLayout04_sub.html">리서치</a></li>
+                    </ul>
+                    <ul class="btn">
+                        <li><a href="#">Biz Star</a></li>
+                        <li><a href="#">비즈니스문의</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!--배너-->
+        <section id="banner">
+            <div class="container">
+                <div class="banner">
+                    <h2>Research Areas</h2>
+                    <p>CLOVA AI Research 는 네이버와 라인이 함께 만드는<br>
+                        오감인지 AI플랫폼을 더욱 스마트하게 만들기 위한<br>
+                        머신러닝/딥러닝 기반의 AI 선행 기술을 연구 개발하는 조직입니다.</p>
+                    <ul>
+                        <li class="banner_btn_icon"><a href="#">RESEARCH VIDEO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--배너-->
+        <section id="cont1">
+            <div class="container">
+                <div class="cont1">
+                        <div class="cont1_lang_btn">
+                            <a href="#" class="btn_english">English</a>
+                            <a href="#" class="btn_korean">Korean</a>
+                        </div>
+                        <p>클로바는 한국의 1등 검색포털 네이버와 일본의 1등 메신저 라인이 함께 만드는 인공지능 플랫폼으로 네이버와 라인이 20여년간 연구해온 세계 최고 수준의 검색, 
+                            언어처리,<br>대화, 음성, 이미지, 비전, 추천 등의 인공지능 기술과 네이버와 라인이 보유한 수많은 콘텐츠와 서비스를 하나의 플랫폼으로 제공할 예정입니다. 
+                            또한, 누구나 쉽게 클로바 플랫폼을<br>활용하여 인공지능 서비스를 만들 수 있게 하여 사용자나 다양한 파트너들과 함께 AI 생태계를 만들고 더 편리한 세상을 함께 만들어 나갈 예정입니다.</p>
+                        <div class="btn_area"><a href="#">TECHNOLOGIES VIDEO</a></div>
+                        <ul>
+                            <li>
+                                <strong>CLOVA AI Research</strong>
+                                <p>CLOVA AI Research 는 네이버와 라인이 함께 만드는 오감인지 AI플랫폼을 더욱 스마트하게 만들기 위한 
+                                    머신러닝/딥러닝 기반의 AI 선행 기술을 연구 개발하는 조직입니다.</p>
+                                <a class="cont1_lang_btn_a" href="#">더보기</a>
+                            </li>
+                            <li>
+                                <strong>NSML</strong>
+                                <p>NSML은 CLOVA AI Research 에서 개발한 딥러닝 클라우드 플랫폼으로 딥러닝을 연구하는 분들의 쉽고 빠른 
+                                    Machine Learning 연구를 가능하게 합니다.</p>
+                                <a class="cont1_lang_btn_a" href="#">더보기</a>
+                            </li>
+                            <li>
+                                <strong>AI Recommender System</strong>
+                                <p>AiRS는 다양한 콘텐츠를 개인의 관심사에 맞춰서 추천해 주는 인공지능 기반 개인화 추천 시스템입니다.</p>
+                                <a class="cont1_lang_btn_a" href="#">더보기</a>
+                            </li>
+                            <li>
+                                <strong>Dialogue</strong>
+                                <p>클로바 대화 시스템은 대화를 통하여 사용자의 요구 사항을 해결하는 시스템으로, 대화에서 사용자의 의도를 정확히 파악하고 의도에 부합한 결과를 제공합니다.</p>
+                                <a class="cont1_lang_btn_a" href="#">더보기</a>
+                            </li>
+                            <li>
+                                <strong>Music Recommendation</strong>
+                                <p>클로바 음악추천 시스템은 사용자의 요청에 적합한 개인화된 음악을 추천합니다.</p>
+                                <a class="cont1_lang_btn_a" href="#">더보기</a>
+                            </li>
+                            <li>
+                                <strong>Natural Language Processing</strong>
+                                <p>클로바의 자연언어처리는 사용자가 발화한 여러 표현을 기계적으로 분석하여 시스템이 이해할 수 있는 형태로 만들고 
+                                    사용자의 질의에 대한 답변이 될 수 있는 정답을 문서나 Knowledge Base에서 찾아서 제시해주는 일을 합니다.</p>
+                                <a class="cont1_lang_btn_a" href="#">더보기</a>
+                            </li>
+                            <li>
+                                <strong>Speech Recognition</strong>
+                                <p>클로바의 음성 인식은 가장 뛰어난 한국어 인식 능력을 가지고 있습니다.</p>
+                                <a class="cont1_lang_btn_a" href="#">더보기</a>
+                            </li>
+                            <li>
+                                <strong>Speech Synthesis</strong>
+                                <p>음성합성은 텍스트를 사람의 목소리로 읽어주는 기술입니다.</p>
+                                <a class="cont1_lang_btn_a" href="#">더보기</a>
+                            </li>
+                            <li>
+                                <strong>Vision</strong>
+                                <p>클로바 비전 팀은 우리 주변의 시각적 세계를 이해하는 기계 학습 알고리즘을 개발하고, 비전 기반의 새로운 사용자 경험을 네이버 제품에 적용합니다.</p>
+                                <a class="cont1_lang_btn_a" href="#">더보기</a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
